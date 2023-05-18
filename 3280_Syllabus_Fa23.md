@@ -1,5 +1,5 @@
-# MATH 3080 – Foundations of Data Science
-__Spring 2023__
+# MATH 3280 – Data Mining - Syllabus
+__Fall 2023__
 
 ## Contact Information
 | Instructor:                  | Dr. Michael E. Olson       |
@@ -10,17 +10,17 @@ __Spring 2023__
 | Phone:                       | (435) 283-7516             |
 
 ## Course Description
-This course will include introduction to data analysis tools in Python, descriptive statistics, data structures with Numpy & Pandas, introductory hypothesis testing & statistical inference, web scraping and data acquisition via APIs, generalized linear regression, classification methods including logistic regression; k-nearest neighbors; decision trees; support vector machines; and neural networks, data visualization, clustering methods, dimensionality reduction; including principle component analysis; network analysis; rating, ranking, and elections, cleaning and reformatting messy datasets using regular expression or dedicated tools such as open refine; natural language processing; ethics of big data. 
+Students will learn to efficiently find structures and patterns in large data sets. Topics will include acquiring data sets and cleaning messy and noisy raw data sets into structured and abstract forms; applying scalable and probabilistic algorithms to these well-structured abstract data sets; and, formally modeling and analyzing the error inherent in these methods. Students will consider data representations and trade-offs between accuracy and scalability.
 
-This course supports an inclusive learning environment where diverse perspectives are recognized, respected and seen as a source of strength. The consideration of a diverse set of problems using real data will help support this goal.
+This course will include a survey of data acquisition and cleaning tools; similarity search, clustering, regression/dimensionality reduction, graph analysis, PageRank, and small space summaries; and, recent developments and the application of these topics to modern applications, often relating to large internet-based companies.
 
-__Our class will meet Mondays, Wednesdays, and Fridays, 8:30 am - 9:20 am in the Huntsman Library, Room 024B.__
+__Our class will meet Tuesdays and Thursdays, 8:00 am - 9:20 am in the Science Building (GRSC), Room 223.__
 
 ## Prerequisites
-This course is for students who have successfully completed Math 2040 and Math 1210, both with a C or better.
+This course is for students who have successfully completed Math 3080 and either Math 2270 or Math 2250 with a C or better in each course.
 
 ## Textbook
-* Grus, Joel, [*Data Science from Scratch*](https://www.oreilly.com/library/view/temporary-access/?orpq), 2nd Edition, 2019.
+* (__TEXTBOOKS COMING__)
   * Available free of charge on O'Reilly Publisher website through a Snow College Subscription
 
 Any supplemental resources will be provided to you on Canvas.
@@ -33,25 +33,25 @@ A tentative schedule is found on Canvas. This schedule may be changed based on p
 
 Important Dates:
 
-| Date     | Event                                                                             |
-| :-----   | :-------                                                                          |
-| Jan 13   | Last day to pay tuition                                                           |
-| Jan 16   | Martin Luther King Jr. Holiday - No School                                        |
-| Jan 27   | Last day to add a Full Semester Course<br>Last day to drop a course without a "W" |
-| Feb 20   | Presidents' Day Holiday - No School                                              |
-| Mar 6-10 | Spring Break                                                                      |
-| Apr 3    | Final day to drop a Full Semester course with a "W"                               |
-| Apr 28   | Last day of classes                                                               |
-| May 2    | 7:00 - 9:00am Final Exam in our classroom                                         |
+| Date      | Event                                                                             |
+| :-----    | :-------                                                                          |
+| Aug 25    | Last day to pay tuition                                                           |
+| Sep 4     | Labor Day Holiday - No School                                                     |
+| Sep 8     | Last day to add a Full Semester Course<br>Last day to drop a course without a "W" |
+| Oct 19-23 | Spring Break - No School                                                          |
+| Oct 27    | Final day to drop a Full Semester course with a "W"                               |
+| Nov 22-24 | Thanksgiving Break - No School                                                    |
+| Dec 8     | Last day of classes                                                               |
+| Dec 12    | 9:30 am Final Exam opens - due Dec 13, 9:30 am                                    |
 
 ## Grading Policy
-| Assignment	      | Percentage of Grade |
+| Assignment	    | Percentage of Grade |
 | :---              | :---:               |
 | Homework	        | 15%                 |
 | Computer Projects | 35%                 |
 | Class Activities  | 10%                 |
 | Midterm Exam      | 20%                 |
-| Final Exam	      | 20%                 |
+| Final Exam	    | 20%                 |
 
 __Homework__ will be assigned using DataCamp. To receive credit, students need to take an assessment. These assignments will be given every two weeks. Instructions will be given on how to access these assignments in the first week of class.
 * If you do not pass the assessment, then a specific 3- to 5-hour course will be assigned on that topic to learn the required skills.

@@ -1,4 +1,6 @@
-# Math 3280 Course Schedule - Fall 2023
+# Math 3280 - Data Mining - Syllabus
+__Fall 2023__
+
 These are the topics that we plan to cover this semester:
 * Database
 * SQL
@@ -16,7 +18,7 @@ These are the topics that we plan to cover this semester:
 * Fourier Analysis
 
 
-Following is my planned schedule for the course. It is incomplete at this point, but will be changed as the semester progresses. The textbooks and videos are found on the [Textbooks](https://github.com/drolsonmi/math3080/blob/main/3080_Textbooks.md) page.
+Following is my planned schedule for the course. It is incomplete at this point, but will be changed as the semester progresses. The textbooks and videos are found on the [Textbooks](https://github.com/drolsonmi/math3280/3280_Textbooks.md) page.
 
 | Date   | Lecture                       | Reading                                             |
 | :----- | :------                       | :------                                             |

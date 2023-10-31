@@ -36,8 +36,8 @@ These are the topics that we plan to cover this semester:
 | Big Data Graphics                    |             |           |            |
 | Image Data                           |             |           |            |
 | Fourier Analysis                     |             | Chapter 2 |            |
-| Clustering                           | 7.1 - ???   | ???       |            |
-| Text Mining                          |             |           |            |
+| Clustering and K-Means               | 7.1 - ???   | ???       |            |
+<!-- | Text Mining                     |             |           |            | -->
 | Neural Networks                      |             |           | Chapter 4  |
 | -- Letter Recognition                |             |           |            |
 | -- Natural Language Processing       |             |           | Chapter 11 |

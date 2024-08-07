@@ -1,56 +1,99 @@
-# Math 3280 - Data Mining - Schedule
-__Fall 2023__
-
-Below is a list of the topics that we plan to cover this semester. We will cover as much as 
-* Database
-* MapReduce
-  * Hadoop
-* Frequent Items and Recommendation Systems
-* PageRank
-* Social Network Graphs
-* Image Data
-  * Singular Value Decomposition
-* Fourier Analysis
-* Neural Networks
-* Regular Expressions
-  * Text Mining
-  * PageRank
-  * Natural Language Processing
+# Math 3280 - Data Mining - Course Schedule - Fall 2024
 
 These are the topics that we plan to cover this semester:
+| Topic                           | Leskovec      | Brunton   | Chollet    | Aurelien  |
+| :------------------------------ | :------------ | :-------- | :--------- | :-------- |
+| Database                        | 2.1           |           |            |           |
+| SQL                             |               |           |            |           |
+| MapReduce & Hadoop              | 2.1 - 2.4     |           |            |           |
+| Similarities                    | 3.1 - 3.5     |           |            |           |
+| PageRank                        | 5.1 - 5.3     |           |            |           |
+| Frequent Itemsets               | 6.1 - 6.???   |           |            |           |
+| Recommendation Systems          | 9.1 - 9.5     |           |            |           |
+| Web Scraping                    |               |           |            |           |
+| Big Data Graphics               |               |           |            |           |
+| Social Network Graphs           | 10.1 - 10.5   |           |            |           |
+| Singular Value Decomposition    | 11.1 - 11.3   | Chapter 1 |            |           |
+| Gradient Descent                | 9.4.5, 12.3.5 | 4.2       |            | Chapter 4 |
+| Multi-Linear Regression         | 1.4           | Chapter 4 |            |           |
+| Image Data                      |               |           |            |           |
+| Principal Component Analysis    |               | Chapter 1 |            |           |
+| Fourier Analysis                |               | Chapter 2 |            |           |
+| Regular Expressions             |               |           |            |           |
+| Text Mining                     |               |           |            |           |
+| Neural Networks                 |               |           | Chapter 4  |           |
+| -- Letter Recognition           |               |           |            |           |
+| -- Natural Language Processing  |               |           | Chapter 11 |           |
 
-| Topic                                | Leskovec    | Brunton   | Chollet    |
-| :----------------------------------- | :---------- | :-------- | :--------- |
-| Database                             | 2.1         |           |            |
-| SQL                                  |             |           |            |
-| MapReduce & Distributed File Systems | 2.1 - 2.4   |           |            |
-| Similarities                         | 3.1 - 3.5   |           |            |
-| PageRank                             | 5.1 - 5.3   |           |            |
-| Frequent Itemsets                    | 6.1 - 6.2   |           |            |
-| Recommendation Systems               | 9.1 - 9.5   |           |            |
-| Social Network Graphs                | 10.1 - 10.5 |           |            |
-<!-- | Regular Expressions             |             |           |            | -->
-<!-- | Web Scraping                    |             |           |            | -->
-| Singular Value Decomposition         | 11.1 - 11.3 | Chapter 1 |            |
-| -- Principal Component Analysis      |             | Chapter 1 |            |
-| Big Data Graphics                    |             |           |            |
-| Image Data                           |             |           |            |
-| Fourier Analysis                     |             | Chapter 2 |            |
-| Clustering and K-Means               | 7.1 - ???   | ???       |            |
-<!-- | Text Mining                     |             |           |            | -->
-| Neural Networks                      |             |           | Chapter 4  |
-| -- Letter Recognition                |             |           |            |
-| -- Natural Language Processing       |             |           | Chapter 11 |
+* Neural Networks - Aurelien *Hands-On* Textbook, Chapters 10-16
+* Bias-Variance Tradeoff
 
-Following are a number of important dates to remember throughout the semester.
+Following is my planned schedule for the course. It is incomplete at this point, but will be changed as the semester progresses. The textbooks and videos are found on the [Textbooks](https://github.com/drolsonmi/math3280/3280_Textbooks.md) page.
 
-| Date      | Lecture                                 |
-| :-------  | :------                                 |
-| Aug 25    | Last day to pay tuition & fees          |
-| Sep 4     | Labor Day - No School                   |
-| Sep 8     | Last day to add or to drop without a W  |
-| Oct 19-23 | Fall Break                              |
-| Oct 27    | Last day to drop a class with a W       |
-| Nov 22-24 | Thanksgiving Break                      |
-| Dec 8     | Last day of classes                     |
-| Dec 11-14 | Final Exams                             |
+| Date   | Lecture                              | Reading                                             |
+| :----- | :----------------------------------- | :-------------------------------------------------- |
+| Aug 27 | Data Mining/Things to Know           |                                                     |
+| Aug 29 | MapReduce & Hadoop                   |                                                     |
+| Sep 2  | __Labor Day - No School__            |                                                     |
+| Sep 3  | MapReduce & Hadoop cont.             |                                                     |
+| Sep 5  | Similarities                         |                                                     |
+| Sep 10 | Similarities cont.                   |                                                     |
+| Sep 12 | PageRank                             |                                                     |
+| Sep 17 | Recommendation Systems               |                                                     |
+| Sep 19 | Recommendation Systems               |                                                     |
+| Sep 24 | Web Scraping                         |                                                     |
+| Sep 26 | Big Data and Social Network Graphics |                                                     |
+| Oct 1  | Singular Value Decomposition         |                                                     |
+| Oct 3  | Singular Value Decomposition         |                                                     |
+| Oct 8  | Gradient Descent                     |                                                     |
+| Oct 10 | Midterm Review                       |                                                     |
+| Oct 15 | Midterm Exam                         |                                                     |
+| Oct 17 | __Fall Break - No School__           |                                                     |
+| Oct 18 | __Fall Break - No School__           |                                                     |
+| Oct 22 | Multi-Linear Regression              |                                                     |
+| Oct 24 |                                      |                                                     |
+| Oct 29 |                                      |                                                     |
+| Oct 31 |                                      |                                                     |
+| Nov 5  |                                      |                                                     |
+| Nov 7  |                                      |                                                     |
+| Nov 12 |                                      |                                                     |
+| Nov 14 |                                      |                                                     |
+| Nov 19 |                                      |                                                     |
+| Nov 21 |                                      |                                                     |
+| Nov 26 |                                      |                                                     |
+| Nov 27 | __Thanksgiving Break - No School__   |                                                     |
+| Nov 28 | __Thanksgiving Break - No School__   |                                                     |
+| Nov 29 | __Thanksgiving Break - No School__   |                                                     |
+| Dec 3  |                                      |                                                     |
+| Dec 5  |                                      |                                                     |
+| Dec 9  | __Last Day of Classes__              |                                                     |
+| Dec 11 | Final Exam opens 9:30am, due 24 hours after |                                            |
+
+Dates to note:
+| Date      |                                            |
+| :-------- | :----------------------------------------- |
+| Aug 30    | __Last day to pay tuition & fees__         |
+| Sep 2     | __Labor Day - No School__                  |
+| Sep 13    | __Last day to add or to drop without a W__ |
+| Oct 17-18 | __Fall Break__                             |
+| Nov 1     | __Last day to drop a class with a W__      |
+| Nov 27-29 | __Thanksgiving Break__ (Nov 22-24)         |
+| Dec 9     | __Last day of classes__                    |
+
+# Lecture Outlines
+Day 1
+* Data Mining
+* Things to know
+  * Importance of Words - TF.IDF
+  * Hash Functions
+
+Day 2
+  * Base of Natural Logarithms
+    * Limit of natural number
+    * Taylor Expansion
+  * Power Laws
+
+Days 3-4
+* Distributed File System
+* MapReduce
+  * Hadoop

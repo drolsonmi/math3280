@@ -1,20 +1,19 @@
-# MATH 3280 – Data Mining - Syllabus
-__Fall 2023__
+# MATH 3280 – Data Mining - Syllabus - Fall 2024
 
 ## Contact Information
-| Instructor:                  | Dr. Michael E. Olson                               |
-| :----------                  | :-------------------                               |
-| Office                       | Noyes 102 D                                        |
-| Office Hours                 | Tue, Thu: 9:30 am - 11:30 am and 1:30 pm - 2:30 pm |
-| Email and<br>Microsoft Teams | michael.olson2@snow.edu                            |
-| Phone:                       | (435) 283-7516                                     |
+| Instructor:                  | Dr. Michael E. Olson       |
+| :----------                  | :-------------------       |
+| Office                       | Noyes 102 D                |
+| Office Hours                 | Mon, Wed 2:00pm - 3:30pm<br>Tue, Thu 9:30am - 11:30am |
+| Email and<br>Microsoft Teams | michael.olson2@snow.edu    |
+| Phone:                       | (435) 283-7516             |
 
 ## Course Description
 Students will learn to efficiently find structures and patterns in large data sets. Topics will include acquiring data sets and cleaning messy and noisy raw data sets into structured and abstract forms; applying scalable and probabilistic algorithms to these well-structured abstract data sets; and, formally modeling and analyzing the error inherent in these methods. Students will consider data representations and trade-offs between accuracy and scalability.
 
 This course will include a survey of data acquisition and cleaning tools; similarity search, clustering, regression/dimensionality reduction, graph analysis, PageRank, and small space summaries; and, recent developments and the application of these topics to modern applications, often relating to large internet-based companies.
 
-__Our class will meet Tuesdays and Thursdays, 8:00 am - 9:20 am in the Science Building (GRSC), Room 223.__
+__Our class will meet Tuesdays and Thursdays, 8:00 am - 9:20 am in the Science Building (GRSC), Room 223__.
 
 ## Prerequisites
 This course is for students who have successfully completed Math 3080 and either Math 2270 or Math 2250 with a C or better in each course.

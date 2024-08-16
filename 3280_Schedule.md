@@ -67,23 +67,24 @@ Following is my planned schedule for the course. It is incomplete at this point,
 | Dec 3  |                                      |                                                     |
 | Dec 5  |                                      |                                                     |
 | Dec 9  | __Last Day of Classes__              |                                                     |
-| Dec 11 | Final Exam opens 9:30am, due 24 hours after |                                            |
+| Dec 11 | Final Exam opens 9:30am, due 24 hours after |                                              |
 
 Dates to note:
-| Date      |                                            |
-| :-------- | :----------------------------------------- |
-| Aug 30    | __Last day to pay tuition & fees__         |
-| Sep 2     | __Labor Day - No School__                  |
-| Sep 13    | __Last day to add or to drop without a W__ |
-| Oct 17-18 | __Fall Break__                             |
-| Nov 1     | __Last day to drop a class with a W__      |
-| Nov 27-29 | __Thanksgiving Break__ (Nov 22-24)         |
-| Dec 9     | __Last day of classes__                    |
+| Date      |                                        |
+| :-------- | :------------------------------------- |
+| Aug 30    | Last day to pay tuition & fees         |
+| Sep 2     | Labor Day - No School                  |
+| Sep 13    | Last day to add or to drop without a W |
+| Oct 17-18 | Fall Break                             |
+| Nov 1     | Last day to drop a class with a W      |
+| Nov 27-29 | Thanksgiving Break (Nov 22-24)         |
+| Dec 9     | Last day of classes                    |
 
 # Lecture Outlines
 Day 1
 * Data Mining
 * Things to know
+  * Bias-Variance Tradeoff 
   * Importance of Words - TF.IDF
   * Hash Functions
 

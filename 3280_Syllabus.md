@@ -13,7 +13,7 @@ Students will learn to efficiently find structures and patterns in large data se
 
 This course will include a survey of data acquisition and cleaning tools; similarity search, clustering, regression/dimensionality reduction, graph analysis, PageRank, and small space summaries; and, recent developments and the application of these topics to modern applications, often relating to large internet-based companies.
 
-__Our class will meet Tuesdays and Thursdays, 8:00 am - 9:20 am in the Science Building (GRSC), Room 223__.
+__Our class will meet Tuesdays and Thursdays, 8:00 am - 9:15 am in the Science Building (GRSC), Room 223__.
 
 ## Prerequisites
 This course is for students who have successfully completed Math 3080 and either Math 2270 or Math 2250 with a C or better in each course.
@@ -39,16 +39,16 @@ A tentative schedule is found on Canvas. This schedule may be changed based on p
 
 Important Dates:
 
-| Date      | Event                                                                             |
-| :-----    | :-------                                                                          |
-| Aug 25    | Last day to pay tuition                                                           |
-| Sep 4     | Labor Day Holiday - No School                                                     |
-| Sep 8     | Last day to add a Full Semester Course<br>Last day to drop a course without a "W" |
-| Oct 19-23 | Fall Break - No School                                                            |
-| Oct 27    | Final day to drop a Full Semester course with a "W"                               |
-| Nov 22-24 | Thanksgiving Break - No School                                                    |
-| Dec 8     | Last day of classes                                                               |
-| Dec 12    | 9:30 am Final Exam opens - due Dec 13, 9:30 am                                    |
+| Date      |                                                |
+| :-------- | :--------------------------------------------- |
+| Aug 30    | Last day to pay tuition & fees                 |
+| Sep 2     | Labor Day - No School                          |
+| Sep 13    | Last day to add or to drop without a W         |
+| Oct 17-18 | Fall Break                                     |
+| Nov 1     | Last day to drop a class with a W              |
+| Nov 27-29 | Thanksgiving Break (Nov 22-24)                 |
+| Dec 9     | Last day of classes                            |
+| Dec 11    | 9:30 am Final Exam opens - due Dec 12, 9:30 am |
 
 ## Grading Policy
 | Assignment	      | Percentage of Grade |

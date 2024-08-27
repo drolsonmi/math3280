@@ -32,26 +32,26 @@ Following is my planned schedule for the course. It is incomplete at this point,
 
 | Date   | Lecture                              | Reading                                             |
 | :----- | :----------------------------------- | :-------------------------------------------------- |
-| Aug 27 | Data Mining/Things to Know           |                                                     |
-| Aug 29 | MapReduce & Hadoop                   |                                                     |
+| Aug 27 | Intro / Things to Know (Math)        |                                                     |
+| Aug 29 | Things to Know (RegEx, Words)        |                                                     |
 | Sep 2  | __Labor Day - No School__            |                                                     |
-| Sep 3  | MapReduce & Hadoop cont.             |                                                     |
-| Sep 5  | Similarities                         |                                                     |
-| Sep 10 | Similarities cont.                   |                                                     |
-| Sep 12 | PageRank                             |                                                     |
-| Sep 17 | Recommendation Systems               |                                                     |
+| Sep 3  | MapReduce & Hadoop                   |                                                     |
+| Sep 5  | MapReduce & Hadoop cont.             |                                                     |
+| Sep 10 | Similarities                         |                                                     |
+| Sep 12 | Similarities cont.                   |                                                     |
+| Sep 17 | PageRank                             |                                                     |
 | Sep 19 | Recommendation Systems               |                                                     |
-| Sep 24 | Web Scraping                         |                                                     |
-| Sep 26 | Big Data and Social Network Graphics |                                                     |
-| Oct 1  | Singular Value Decomposition         |                                                     |
+| Sep 24 | Recommendation Systems               |                                                     |
+| Sep 26 | Web Scraping                         |                                                     |
+| Oct 1  | Big Data and Social Network Graphics |                                                     |
 | Oct 3  | Singular Value Decomposition         |                                                     |
-| Oct 8  | Gradient Descent                     |                                                     |
+| Oct 8  | Singular Value Decomposition         |                                                     |
 | Oct 10 | Midterm Review                       |                                                     |
 | Oct 15 | Midterm Exam                         |                                                     |
 | Oct 17 | __Fall Break - No School__           |                                                     |
 | Oct 18 | __Fall Break - No School__           |                                                     |
-| Oct 22 | Multi-Linear Regression              |                                                     |
-| Oct 24 |                                      |                                                     |
+| Oct 22 | Gradient Descent                     |                                                     |
+| Oct 24 | Multi-Linear Regression              |                                                     |
 | Oct 29 |                                      |                                                     |
 | Oct 31 |                                      |                                                     |
 | Nov 5  |                                      |                                                     |

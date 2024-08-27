@@ -28,35 +28,35 @@ These are the topics that we plan to cover this semester:
 * Neural Networks - Aurelien *Hands-On* Textbook, Chapters 10-16
 * Bias-Variance Tradeoff
 
-Following is my planned schedule for the course. It is incomplete at this point, but will be changed as the semester progresses. The textbooks and videos are found on the [Textbooks](https://github.com/drolsonmi/math3280/3280_Textbooks.md) page.
+Following is my planned schedule for the course. It is incomplete at this point, but will be updated as the semester progresses. The textbooks and videos are found on the [Textbooks](https://github.com/drolsonmi/math3280/3280_Textbooks.md) page.
 
 | Date   | Lecture                              | Reading                                             |
 | :----- | :----------------------------------- | :-------------------------------------------------- |
-| Aug 27 | Intro / Things to Know (Math)        |                                                     |
-| Aug 29 | Things to Know (RegEx, Words)        |                                                     |
+| Aug 27 | Intro / Things to Know (Math Review) | Leskovec 1.1, 1.3                                   |
+| Aug 29 | Regular Expressions                  |                                                     |
 | Sep 2  | __Labor Day - No School__            |                                                     |
-| Sep 3  | MapReduce & Hadoop                   |                                                     |
-| Sep 5  | MapReduce & Hadoop cont.             |                                                     |
-| Sep 10 | Similarities                         |                                                     |
-| Sep 12 | Similarities cont.                   |                                                     |
-| Sep 17 | PageRank                             |                                                     |
-| Sep 19 | Recommendation Systems               |                                                     |
+| Sep 3  | Things to Know (Words)               | Leskovec 1.3                                        |
+| Sep 5  | MapReduce & Hadoop                   |                                                     |
+| Sep 10 | MapReduce & Hadoop cont.             |                                                     |
+| Sep 12 | Similarities                         |                                                     |
+| Sep 17 | Similarities cont.                   |                                                     |
+| Sep 19 | PageRank                             |                                                     |
 | Sep 24 | Recommendation Systems               |                                                     |
-| Sep 26 | Web Scraping                         |                                                     |
-| Oct 1  | Big Data and Social Network Graphics |                                                     |
-| Oct 3  | Singular Value Decomposition         |                                                     |
-| Oct 8  | Singular Value Decomposition         |                                                     |
-| Oct 10 | Midterm Review                       |                                                     |
-| Oct 15 | Midterm Exam                         |                                                     |
+| Sep 26 | Recommendation Systems               |                                                     |
+| Oct 1  | Web Scraping                         |                                                     |
+| Oct 3  | Big Data and Social Network Graphics |                                                     |
+| Oct 8  | Midterm Review                       |                                                     |
+| Oct 10 | Midterm Exam                         |                                                     |
+| Oct 15 | Singular Value Decomposition         |                                                     |
 | Oct 17 | __Fall Break - No School__           |                                                     |
 | Oct 18 | __Fall Break - No School__           |                                                     |
-| Oct 22 | Gradient Descent                     |                                                     |
-| Oct 24 | Multi-Linear Regression              |                                                     |
-| Oct 29 |                                      |                                                     |
-| Oct 31 |                                      |                                                     |
-| Nov 5  |                                      |                                                     |
-| Nov 7  |                                      |                                                     |
-| Nov 12 |                                      |                                                     |
+| Oct 22 | Singular Value Decomposition         |                                                     |
+| Oct 24 | Image Analysis                       |                                                     |
+| Oct 29 | Gradient Descent                     |                                                     |
+| Oct 31 | Multi-Linear Regression              |                                                     |
+| Nov 5  | Principal Component Analysis         |                                                     |
+| Nov 7  | Fourier Series                       |                                                     |
+| Nov 12 | Fourier Analysis                     |                                                     |
 | Nov 14 |                                      |                                                     |
 | Nov 19 |                                      |                                                     |
 | Nov 21 |                                      |                                                     |

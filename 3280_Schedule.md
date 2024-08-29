@@ -32,10 +32,10 @@ Following is my planned schedule for the course. It is incomplete at this point,
 
 | Date   | Lecture                              | Reading                                             |
 | :----- | :----------------------------------- | :-------------------------------------------------- |
-| Aug 27 | Intro / Things to Know (Math Review) | Leskovec 1.1, 1.3                                   |
-| Aug 29 | Regular Expressions                  |                                                     |
+| Aug 27 | Intro / Math Tools                   | Leskovec 1.1, 1.3                                   |
+| Aug 29 | Math & Linguistic Tools              | Leskovec 1.3                                        |
 | Sep 2  | __Labor Day - No School__            |                                                     |
-| Sep 3  | Things to Know (Words)               | Leskovec 1.3                                        |
+| Sep 3  | Regular Expressions                  |                                                     |
 | Sep 5  | MapReduce & Hadoop                   |                                                     |
 | Sep 10 | MapReduce & Hadoop cont.             |                                                     |
 | Sep 12 | Similarities                         |                                                     |

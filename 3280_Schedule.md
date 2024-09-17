@@ -36,27 +36,32 @@ Following is my planned schedule for the course. It is incomplete at this point,
 | Aug 29 | Math & Linguistic Tools              | Leskovec 1.3                                        |
 | Sep 2  | __Labor Day - No School__            |                                                     |
 | Sep 3  | Regular Expressions                  |                                                     |
+|        | __----- HANDLING LARGE DATASETS ---__|                                                     |
 | Sep 5  | MapReduce & Hadoop                   |                                                     |
 | Sep 10 | MapReduce & Hadoop cont.             |                                                     |
-| Sep 12 | Similarities                         |                                                     |
-| Sep 17 | Similarities cont.                   |                                                     |
-| Sep 19 | PageRank                             |                                                     |
-| Sep 24 | Recommendation Systems               |                                                     |
+| Sep 12 | Relational Algebra & Spark           |                                                     |
+|        | __----- SIMILARITIES ---__           |                                                     |
+| Sep 17 | Spark & Distances                    | Leskovec 3.1, 3.5                                   |
+| Sep 19 | Similarities                         |                                                     |
+| Sep 24 | PageRank                             |                                                     |
 | Sep 26 | Recommendation Systems               |                                                     |
-| Oct 1  | Web Scraping                         |                                                     |
-| Oct 3  | Big Data and Social Network Graphics |                                                     |
-| Oct 8  | Midterm Review                       |                                                     |
-| Oct 10 | Midterm Exam                         |                                                     |
-| Oct 15 | Singular Value Decomposition         |                                                     |
+| Oct 1  | Recommendation Systems               |                                                     |
+| Oct 3  | Web Scraping                         |                                                     |
+| Oct 8  | Big Data and Social Network Graphics |                                                     |
+| Oct 10 | Midterm Review                       |                                                     |
+| Oct 15 | Midterm Exam                         |                                                     |
 | Oct 17 | __Fall Break - No School__           |                                                     |
 | Oct 18 | __Fall Break - No School__           |                                                     |
+|        | __----- IMAGE PROCESSING-----__      |                                                     |
 | Oct 22 | Singular Value Decomposition         |                                                     |
-| Oct 24 | Image Analysis                       |                                                     |
-| Oct 29 | Gradient Descent                     |                                                     |
-| Oct 31 | Multi-Linear Regression              |                                                     |
-| Nov 5  | Principal Component Analysis         |                                                     |
-| Nov 7  | Fourier Series                       |                                                     |
-| Nov 12 | Fourier Analysis                     |                                                     |
+| Oct 24 | Singular Value Decomposition         |                                                     |
+| Oct 29 | Image Analysis                       |                                                     |
+| Oct 31 | Gradient Descent                     |                                                     |
+| Nov 5  | Multi-Linear Regression              |                                                     |
+| Nov 7  | Principal Component Analysis         |                                                     |
+|        | __----- SIGNAL PROCESSING-----__     |                                                     |
+| Nov 12 | Fourier Series                       |                                                     |
+| Nov 14 | Fourier Analysis                     |                                                     |
 | Nov 14 |                                      |                                                     |
 | Nov 19 |                                      |                                                     |
 | Nov 21 |                                      |                                                     |

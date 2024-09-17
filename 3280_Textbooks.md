@@ -1,6 +1,7 @@
 # Textbooks and Resources
 In this class, we will focus most of our attention on the following two books:
 * Brunton, Steven L. and J. Nathan Kutz, [*Data-Driven Science and Engineering*](http://databookuw.com/databook.pdf), 2019.
+
     * Companion website: [http://databookuw.com](http://databookuw.com).
     * 2nd Edition of the book is not adopted for the course, but if you would like it, it is available here: [https://faculty.washington.edu/sbrunton/DataBookV2.pdf](https://faculty.washington.edu/sbrunton/DataBookV2.pdf)
 * Leskovec, Jure et al., [*Mining of Massive Datasets*](http://www.mmds.org/), 3rd Edition, 2020.

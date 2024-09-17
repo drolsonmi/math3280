@@ -1,13 +1,15 @@
 # Textbooks and Resources
 In this class, we will focus most of our attention on the following two books:
+
 * Brunton, Steven L. and J. Nathan Kutz, [*Data-Driven Science and Engineering*](http://databookuw.com/databook.pdf), 2019.
-    * Companion website: [http://databookuw.com](http://databookuw.com).
-    * 2nd Edition of the book is not adopted for the course, but if you would like it, it is available here: [https://faculty.washington.edu/sbrunton/DataBookV2.pdf](https://faculty.washington.edu/sbrunton/DataBookV2.pdf)
+  * Companion website: [http://databookuw.com](http://databookuw.com).
+  * 2nd Edition of the book is not adopted for the course, but if you would like it, it is available here: [https://faculty.washington.edu/sbrunton/DataBookV2.pdf](https://faculty.washington.edu/sbrunton/DataBookV2.pdf)
 * Leskovec, Jure et al., [*Mining of Massive Datasets*](http://www.mmds.org/), 3rd Edition, 2020.
 
 <a href="http://www.mmds.org/"><img src="https://m.media-amazon.com/images/I/61esnXkNFvL.jpg" width=200></a>&nbsp;&nbsp;&nbsp;<a href="http://databookuw.com/databook.pdf"><img src="http://www.databookuw.com/files/stacks-image-5bffc53-882x1200.png" width=200></a>&nbsp;&nbsp;&nbsp;<a href="https://faculty.washington.edu/sbrunton/DataBookV2.pdf"><img src="https://m.media-amazon.com/images/I/51l55yq9w4L._SY466_.jpg" width=200></a>
 
 One other book that may be useful during our discussion of Spark and PySpark:
+
 * Rioux, Jonathan, [*Data Analysis with Python and PySpark*](https://learning.oreilly.com/library/view/data-analysis-with/9781617297205/), 2022.
 
 <a href="https://learning.oreilly.com/library/view/data-analysis-with/9781617297205/"><img src="https://learning.oreilly.com/covers/urn:orm:book:9781617297205/400w/" width=75></a>

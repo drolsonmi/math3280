@@ -42,12 +42,14 @@ Following is my planned schedule for the course. It is incomplete at this point,
 | Sep 12 | Relational Algebra & Spark           |                                                     |
 |        | __----- SIMILARITIES ---__           |                                                     |
 | Sep 17 | Spark & Distances                    | Leskovec 3.1, 3.5                                   |
-| Sep 19 | Similarities                         |                                                     |
-| Sep 24 | PageRank                             |                                                     |
-| Sep 26 | Recommendation Systems               |                                                     |
-| Oct 1  | Recommendation Systems               |                                                     |
-| Oct 3  | Web Scraping                         |                                                     |
-| Oct 8  | Big Data and Social Network Graphics |                                                     |
+| Sep 19 | *Work on Project 1*                  |                                                     |
+| Sep 24 | Similarities                         |                                                     |
+| Sep 26 | Locality Sensitive Hashing           |                                                     |
+| Oct 1  | PageRank                             |                                                     |
+| Oct 3  | Recommendation Systems               |                                                     |
+| Oct 8  | Recommendation Systems               |                                                     |
+<!--| Oct 10 | Web Scraping                         |                                                     |
+    | Oct 10 | Big Data and Social Network Graphics |                                                     |-->
 | Oct 10 | Midterm Review                       |                                                     |
 | Oct 15 | Midterm Exam                         |                                                     |
 | Oct 17 | __Fall Break - No School__           |                                                     |

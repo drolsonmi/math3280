@@ -1,40 +1,44 @@
 # Textbooks and Resources
-In this class, we will focus most of our attention on the following two books:
+In this class, we will focus most of our attention on the following books:
 
-* Brunton, Steven L. and J. Nathan Kutz, [*Data-Driven Science and Engineering*](http://databookuw.com/databook.pdf), 2019.
-  * Companion website: [http://databookuw.com](http://databookuw.com).
-  * 2nd Edition of the book is not adopted for the course, but if you would like it, it is available here: [https://faculty.washington.edu/sbrunton/DataBookV2.pdf](https://faculty.washington.edu/sbrunton/DataBookV2.pdf)
+* Nield, Thomas, [*Essential Math for Data Science*](https://www.oreilly.com/library/view/essential-math-for/9781098102920/), 2022.
+  * Access for free through [O'Reilly's educational site](https://www.oreilly.com/library-access/?orpqLinks) (see below)
 * Leskovec, Jure et al., [*Mining of Massive Datasets*](http://www.mmds.org/), 3rd Edition, 2020.
+* Brunton, Steven L. and J. Nathan Kutz, [*Data-Driven Science and Engineering*](https://faculty.washington.edu/sbrunton/DataBookV2.pdf), 2nd Edition, 2021.
+  * Companion website: [http://databookuw.com](http://databookuw.com).
 
-<a href="http://www.mmds.org/"><img src="https://m.media-amazon.com/images/I/61esnXkNFvL.jpg" width=200></a>&nbsp;&nbsp;&nbsp;<a href="http://databookuw.com/databook.pdf"><img src="http://www.databookuw.com/files/stacks-image-5bffc53-882x1200.png" width=200></a>&nbsp;&nbsp;&nbsp;<a href="https://faculty.washington.edu/sbrunton/DataBookV2.pdf"><img src="https://m.media-amazon.com/images/I/51l55yq9w4L._SY466_.jpg" width=200></a>
+<a href="https://www.oreilly.com/library/view/essential-math-for/9781098102920/"><img src="https://www.oreilly.com/covers/urn:orm:book:9781098102920/400w/" width=200></a>&nbsp;&nbsp;&nbsp;<a href="http://www.mmds.org/"><img src="https://m.media-amazon.com/images/I/61esnXkNFvL.jpg" width=200></a>&nbsp;&nbsp;&nbsp;<a href="https://faculty.washington.edu/sbrunton/DataBookV2.pdf"><img src="https://m.media-amazon.com/images/I/51l55yq9w4L._SY466_.jpg" width=200></a>
 
-One other book that may be useful during our discussion of Spark and PySpark:
+<!--One other book that may be useful during our discussion of Spark and PySpark:
 
 * Rioux, Jonathan, [*Data Analysis with Python and PySpark*](https://learning.oreilly.com/library/view/data-analysis-with/9781617297205/), 2022.
-
 <a href="https://learning.oreilly.com/library/view/data-analysis-with/9781617297205/"><img src="https://learning.oreilly.com/covers/urn:orm:book:9781617297205/400w/" width=75></a>
+-->
 
 All books are free digitally. If you choose, you can purchase these books for reasonable prices on Amazon or other textbook websites.
 
 -----
 As a reference, here are the textbooks we used in MATH 3080:
 * McKinney, Wes, [*Python for Data Analysis*](https://wesmckinney.com/book/), 3rd Edition, 2022.
+* James, Gareth, et al., [*Introduction to Statistical Learning*](https://www.statlearning.com/resources-python), 2023.
 
 Other similar and useful references:
 * Grus, Joel, [*Data Science from Scratch*](https://learning.oreilly.com/library/view/data-science-from/9781492041122/), 2nd Edition, 2019.
+  * Access for free through [O'Reilly's educational site](https://www.oreilly.com/library-access/?orpqLinks) (see below)
 * Phillips, Jeff, [*Mathematical Foundations for Data Analysis*](https://mathfordata.github.io/), v0.6, 2019.
-* James, Gareth, et al., [*Introduction to Statistical Learning*](https://www.statlearning.com/resources-python), 2023.
 * Hastie, Trevor, et al., [*The Elements of Statistical Learning*](https://hastie.su.domains/ElemStatLearn/), 2009.
 
-The *Mathematical Foundations* and *Python for Data Analysis* books are available for free. The *Data Science from Scratch* textbook is available on the O'Reilly publishing website. Snow College has a license with O'Reilly, which gives you free access to this book and many others. Here is how to access O'Reilly textbooks:
+This is the book that will be used in MATH 3480. We will refer to this book occasionally this semester, but we'll use it in more detail next semester:
+
+* Geron, Aurelien, [*Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), 2nd Edition, 
+-----
+### Accessing O'Reilly Textbooks
+Snow College has a license with O'Reilly, which gives you free access to this book and many others. Here is how to access O'Reilly textbooks:
 * Navigate to [https://www.oreilly.com/library/view/temporary-access/?orpqLinks](https://www.oreilly.com/library/view/temporary-access/?orpqLinks).
 * Select "Institution not listed?"
 * Enter you Snow College email address
 * Search for and read the textbook
 
-This is the book that will be used in MATH 3480. We will refer to this book occasionally this semester, but we'll use it in more detail next semester:
-
-* Geron, Aurelien, [*Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*](https://learning.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), 2nd Edition, 
 
 # Other Resources that may be helpful
 

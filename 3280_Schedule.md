@@ -4,11 +4,11 @@ Following is a list of topics I am planning to cover. The textbooks and videos a
 
 | Topic                                | Reading                                             |
 | :----------------------------------- | :-------------------------------------------------- |
-| Intro                                | Leskovec 1.1, 1.3                                   |
+| Intro                                | Leskovec: 1.1, 1.3                                  |
 | __----- TOOLS FOR THE CLASS---__     |                                                     |
-| Linear Algebra Review                |                                                     |
-| Measures of Distance                 |                                                     |
-| Linguistic Tools                     | Leskovec 1.3                                        |
+| Linear Algebra Review                | Nield: Chapter 4                                    |
+| Measures of Distance                 | Leskovec: 3.5                                       |
+| Linguistic Tools                     | Leskovec: 1.3                                       |
 | Parallel Processing                  |                                                     |
 | __----- SIMILARITIES ---__           |                                                     |
 | Similarities                         |                                                     |

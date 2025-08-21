@@ -1,0 +1,8 @@
+theme: jekyll-theme-minimal
+url: https://drolsonmi.github.io
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+usemathjax: true
+title: MATH 3280 - Data Mining

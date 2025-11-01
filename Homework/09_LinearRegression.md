@@ -25,16 +25,25 @@ At this point, you will need to clean the data as we learned in MATH 3080.
 3. Perform a linear regression just between Temperature (`AirTF_Avg`) and Relative Humidity (`RH_Avg`). Use the SVDs method to complete the linear regression. What is the value of the bias?
 4. What is the value of the parameter?
 5. Use the bias and parameter to predict the relative humidity if the temperature is $T$.
-6. The correlation coefficient is found using the equation below. Find this correlation between temperature and humidity.
+6. What is the RMSE of your model?
+7. The correlation coefficient is found using the equation below. Find this correlation between temperature and humidity. Be sure to use the cleaned dataset.
     $$r = \frac{1}{n-1}\sum \frac{x-\bar{x}}{s_x}\frac{y-\bar{y}}{s_y}$$
 
+Notice that the regression is not perfect. That is because other variables come into play. We will now create a linear regression to predict the relative humidity based on all variables. 
 
-Notice that the regression is not perfect. That is because other variables come into play. We will now create a linear regression to predict the relative humidity based on all other variables.
+Remember that the variables listed at the beginning of the assignment are the same variables needed from here on out. Any additional or missing variables will cause incorrect results.
 
-7. Create a linear regression to predict the relative humidity based on all other variables using the SVD method. Copy the code here.
-8. Running this on the data, identify the bias and the parameters.
-9. What is the parameter associated with Barometric Pressure?
-10. Predict the Relative Humidity with the following variables:
+8. Perform a linear regression to predict the relative humidity based on all variables using the SVD method. What is the value of the bias.
+9. What is the value of the parameter associated with the Maximum Dew Point temperature?
+10. What is the value of the parameter associated with Barometric Pressure?
+11. Find the RMSE of your multilinear regression. 
+12. Did the multilinear regression improve the model?
+    * RMSE is higher ==> better performance
+    * RMSE is higher ==> worse performance
+    * RMSE is lower  ==> better performance  <== Correct
+    * RMSE is lower  ==> worse performance
+13. Find the correlation between relative humidity and all other variables. Which variable has the highest correlation with relative humidity?
+14. Predict the Relative Humidity with the following variables:
     * Temperature = $T$
     * Maximum Temperature = $X$
     * Minimum Temperature = $N$

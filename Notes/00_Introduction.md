@@ -2,6 +2,11 @@
 
 
 
+
+
+
+
+
 There are 4 major terms that are often used interchangeably in data science.
 
 | Area             | Description |
@@ -39,3 +44,12 @@ There are 4 major terms that are often used interchangeably in data science.
     * Utilizes big data, machine learning, and deep learning (among others) to mine information from data
 * Artificial intelligence
     * Uses Data Science to program computers to learn how to solve problems and make intelligent decisions
+
+
+## Data Mining Process
+1. Set Goals
+2. Select Data
+3. Preprocessing (Data Cleaning)
+4. Transform data (Data Wrangling)
+5. Mine the Data (Analysis and Modeling/Machine Learning)
+6. Evaluate the Data and share results

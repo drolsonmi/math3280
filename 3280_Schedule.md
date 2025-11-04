@@ -19,12 +19,13 @@ Following is a list of topics I am planning to cover. The textbooks and videos a
 | Recommendation Systems               |                                                     |
 | __----- IMAGE PROCESSING-----__      |                                                     |
 | Singular Value Decomposition         |                                                     |
-| Image Analysis                       |                                                     |
-| Gradient Descent                     |                                                     |
 | Multi-Linear Regression              |                                                     |
 | Principal Component Analysis         |                                                     |
 | __----- SIGNAL PROCESSING-----__     |                                                     |
 | Fourier Analysis                     |                                                     |
+| __----- MACHINE LEARNING-----__      |                                                     |
+| Image Analysis                       |                                                     |
+| Gradient Descent                     |                                                     |
 
 Important Dates to note:
 | Date      |                                           |

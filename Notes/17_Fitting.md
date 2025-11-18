@@ -193,7 +193,9 @@ So, the gradient is just a multi-dimensional version of finding the slope using 
 $$f(x,y) = \frac{x^2}{3} + x^4 + \frac{y^2}{5}$$
 $$\nabla f(x,y) = \frac{\partial f}{\partial x}\hat{x} + \frac{\partial f}{\partial y}\hat{y} = \left(\frac{2}{3}x + 4x^3\right)\hat{x} + \left(\frac{2}{5}y\right)\hat{y}$$
 
-
+> [Desmos: 3280 Gradient Descent](https://www.desmos.com/calculator/idhrrrrtzo)
+> * Plot the same function on https://www.desmos.com/3d
+> * Do the same for another function
 
 > Open in https://www.desmos.com/3d and show $z = \frac{x^2}{3} + x^4 + \frac{y^2}{5}$ and $y = -\frac{5}{3}x + 10x^3
 > https://www.desmos.com/3d/p3lywcgj7r to see the gradient

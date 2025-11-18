@@ -191,12 +191,13 @@ $$\nabla f(\vec{x}) = 6(x+4) = 0 \qquad\to\qquad x=-4$$
 
 So, the gradient is just a multi-dimensional version of finding the slope using the derivative. Now, a more complicated example. Find the gradient of the following function and find where the gradient is 0.
 $$f(x,y) = \frac{x^2}{3} + x^4 + \frac{y^2}{5}$$
-$$\nabla f(x,y) = \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y} = \frac{2}{3}x + 4x^3 + \frac{2}{5}y$$
-$$\nabla f(x,y) = \frac{2}{3}x + 4x^3 + \frac{2}{5}y = 0 \qquad\to\qquad y = -\frac{5}{3}x + 10x^3
-$$\nabla f(x,y) = 11x + 9y = 0 \qquad \to \qquad y = -\frac{11}{9}x$$
+$$\nabla f(x,y) = \frac{\partial f}{\partial x}\hat{x} + \frac{\partial f}{\partial y}\hat{y} = \left(\frac{2}{3}x + 4x^3\right)\hat{x} + \left(\frac{2}{5}y\right)\hat{y}$$
 
-> Open in https://www.desmos.com/3d and show $z = 3x^2 + 5xy + 2y^2$ and $y = -\tfrac{11}{9}x$
+
+
+> Open in https://www.desmos.com/3d and show $z = \frac{x^2}{3} + x^4 + \frac{y^2}{5}$ and $y = -\frac{5}{3}x + 10x^3
 > https://www.desmos.com/3d/p3lywcgj7r to see the gradient
+<!-- > Open in https://www.desmos.com/3d and show $z = 3x^2 + 5xy + 2y^2$ and $y = -\tfrac{11}{9}x$ -->
 
 Usually, it's not so easy to find the minimum. So, we become the boulder. That is, we use the gradient to point us in the downhill direction, and then step that direction, then do an iteration until we stop going downhill.
 $$\vec{x}_{i+1} = \vec{x}_i - \nabla f(\vec{x})$$

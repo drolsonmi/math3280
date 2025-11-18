@@ -86,7 +86,7 @@ For this reason, we have a few other measures. For them, we use the following de
 * $FN$ = False negatives (Number of events predicted not in a category, but actually is)
 
 __Precision__
-Of the predictions for a specific category, how many were right?
+* Of the predictions for a specific category, how many were right?
     * How many correct in a column?
 
 $$precision = \frac{TP}{TP+FP}$$
@@ -97,7 +97,7 @@ $$precision_B = \frac{48}{4+48+2} = \frac{48}{54} = 0.889$$
 $$precision_C = \frac{61}{9+5+61} = \frac{61}{75} = 0.813$$
 
 __Recall__
-For a given true category, how many did you predict correctly? 
+* For a given true category, how many did you predict correctly? 
     * How many correct in a row?
 
 $$recall = \frac{TP}{TP+FN}$$
@@ -108,7 +108,7 @@ $$recall_B = \frac{48}{3+48+5} = \frac{48}{56} = 0.857$$
 $$recall_C = \frac{61}{6+2+61} = \frac{61}{69} = 0.884$$
 
 __F1-score__
-This is the mean of the precision and recall, but we don't just add them and divide by two. Instead, we use the __harmonic mean__.
+* This is the mean of the precision and recall, but we don't just add them and divide by two. Instead, we use the __harmonic mean__.
 * The mean weights all entries equally
 * The harmonic mean gives more weight to low values
 
@@ -161,7 +161,18 @@ and so on.
 However, if we consider nonlinear regression (polynomials, exponentials, etc.), these derivatives are not so straight forward. In fact, it is absolutely messy. So, what do we use instead? Gradient Descent!
 
 ## Gradient Descent
-Our goal is to minimize our loss function. To best see this, consider your loss function like a mountain.
+Our goal is to minimize our loss function. The problem is that the loss function depends on both $\theta_0$ and $\theta_1$. So, if I find the $\theta_0$ and $\theta_1$ that will minimize the loss function and update those values, then the loss function has changed, and it may no longer be a minimum.
+* Worst case scenario, the loss function has changed so much that I am nowhere near a minimum, regardles of how close I may have been before
+
+> * Draw two upwards parabolas to depict $\theta_0$ vs E and $\theta_1$ vs E
+
+To avoid overshooting, don't update the parameters all the way.
+1. Determine how the loss function will change with respect to each parameter $\tfrac{\partial E}{\partial \theta_k}$
+2. Determine whether increase or decreasing $\theta_k$ will cause E to drop
+3. Take a *small* step in the direction step 2 indicates
+4. Repeat steps 1-3 until $\tfrac{\partial E}{\partial \theta_k} = 0$
+
+To best see how this works in multiple dimensions, consider your loss function like a mountain.
 
 If you are climbing a mountain, the steepness of the hill is measured with the gradient. The gradient is similar to a slope, but it takes more dimensions into account. If you calculate the gradient, you are finding the path of greatest ascent.
 
@@ -176,11 +187,12 @@ Very simple example that we learned in calculus 1. Let $f(x) = 3(x+4)^2$. What i
 $$\nabla f(\vec{x}) = \frac{\partial}{\partial x} 3(x+4)^2 = 6(x+4)$$
 $$\nabla f(\vec{x}) = 6(x+4) = 0 \qquad\to\qquad x=-4$$
 
-> Graph it and find where the slope is steepest
+> Graph it and find where the slope is 0 and where the slope is steepest
 
 So, the gradient is just a multi-dimensional version of finding the slope using the derivative. Now, a more complicated example. Find the gradient of the following function and find where the gradient is 0.
-$$f(x,y) = 3x^2 + 5xy + 2y^2$$
-$$\nabla f(x,y) = \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y} = 6x + 5y + 5x + 4y = 11x + 9y$$
+$$f(x,y) = \frac{x^2}{3} + x^4 + \frac{y^2}{5}$$
+$$\nabla f(x,y) = \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y} = \frac{2}{3}x + 4x^3 + \frac{2}{5}y$$
+$$\nabla f(x,y) = \frac{2}{3}x + 4x^3 + \frac{2}{5}y = 0 \qquad\to\qquad y = -\frac{5}{3}x + 10x^3
 $$\nabla f(x,y) = 11x + 9y = 0 \qquad \to \qquad y = -\frac{11}{9}x$$
 
 > Open in https://www.desmos.com/3d and show $z = 3x^2 + 5xy + 2y^2$ and $y = -\tfrac{11}{9}x$

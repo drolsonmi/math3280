@@ -222,3 +222,9 @@ What if you hit a local minimum, but there is another global minimum?
 > ./Code/17_GradientDescent.py
 
 ### Stochastic Gradient Descent
+* Use a randomly selected fraction of the data
+    * Calculations are faster
+    * Loss function calculated on different data each time
+        * Introduces noise
+        * Path becomes more erratic - slows it down, but not as much as using the full dataset
+    * The erratic nature of SGD makes it possible to get out of a local minimum but not likely to get out of a global minimum

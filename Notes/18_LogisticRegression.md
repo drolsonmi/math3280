@@ -12,12 +12,18 @@ Logistic Regression is a *classification* model - it can be used to predict cate
 
 ## How Logistic Regression works
 Like linear regression, there is a linear equation used in the prediction.
-$$y = \theta_0 + \theta_1x + \dots = \vec{\theta}\cdot \vec{x}$$
+$$f(x) = \theta_0 + \theta_1x + \dots = \vec{\theta}\cdot \vec{x}$$
 
-Unlike linear regression, however, a function is applied to this linear equation. Specifically, we apply the linear equation to a sigmoid function:
-$$\sigma(u) = \frac{1}{1+e^{-u}}$$
+Unlike linear regression, however, a function is applied to this linear equation. Specifically, we apply the linear equation to a __logit__ function.
+$$\ln\left(\frac{p'}{1-p'}\right) = f(x)$$
+$$\frac{p'}{1-p'} = e^{f(x)}$$
+$$p' = (1-p')e^{f(x)}$$
+$$p'(1+e^{f(x)}) = e^{f(x)}$$
+$$p' = \frac{e^{f(x)}}{1+e^{f(x)}} = \frac{1}{1+e^{-f(x)}}$$
 
 > Plot on Desmos
+>   * f(x) = x/(1-x)
+>   * y = 1/(1+e^f(x))
 
 Our predictions are calculated as a probability based on the sigmoid function:
 $$p' = \sigma (\vec{\theta} \cdot \vec{x}) = \frac{1}{1+e^{-\theta_0-\theta_1x}}$$

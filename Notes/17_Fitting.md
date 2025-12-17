@@ -61,6 +61,10 @@ __Root Mean Square Log Error (RMSLE)__
 
 $$RMSLE = \sqrt{\frac{1}{n}\sum \left[\ln(y'+1) - \ln(y+1)\right]^2}$$
 
+#### How do we know if the error is good?
+STILL NEED TO WRITE THIS SECTION.
+* Compare to mean (RMSE / mean)
+* Normalize
 
 ### Evaluating Classification models
 The key to evaluating classification models is to count the number of correct classifications. To understand these calculations, we look at the confusion matrix. Here is an example of a confusion matrix when predicting 3 categories:

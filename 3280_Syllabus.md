@@ -27,10 +27,11 @@ At the end of this course, students will be able to do the following:
 Textbook information is found on the [Textbook page](https://github.com/drolsonmi/math3280/blob/master/3280_Textbooks.md) of my Github site.
 
 ## Required Materials
-* Access to a computer (desktop, laptop, or computer lab)
-* Python compiler
-  * Install locally on your computer, or
-  * Use [Google Colab](https://colab.research.google.com/) on Google Drive
+- Access to a computer (desktop, laptop, or computer lab)
+- [Dr. Olson's github page for this course: https://github.com/drolsonmi/math3280](https://github.com/drolsonmi/math3280)
+- A Python compiler
+    - Install directly on your computer
+    - Google Colab (colab.research.google.com)
 
 ## Grading Policy
 | Assignment   | Percentage of Grade |
@@ -40,7 +41,7 @@ Textbook information is found on the [Textbook page](https://github.com/drolsonm
 | Exams        | 40%                 |
 
 ### Overview of Course Units
-Everything in this course looks at working with Big Data. However, we'll separate this course into 4 segments to better guide our learning:
+This course will address a variety of topics in the field of Data Mining and Linear Algebra-related algorithms, including:
 1. Handling Big Data
 2. Big Data Tools
 3. Big Data Comparisons

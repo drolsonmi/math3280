@@ -68,3 +68,9 @@ Consequences of improper AI usage:
 - 1st offense: 0 on assignment until you come talk to me
 - 2nd offense: penalty at discression of professor
 - 3rd offense: Reported to Academic Standards Committee
+
+## Teams
+- Reminder of Teams usage
+    - Class Notes
+    - Communication (via Teams and through OneNote)
+    - Resources

@@ -1,22 +1,27 @@
-# MATH 3280 – Data Mining - Syllabus - Fall 2024
+# MATH 3280 Syllabus - Fall 2026
 
 ## Contact Information
-| Instructor:                  | Dr. Michael E. Olson               |
-| :----------                  | :--------------------------------- |
-| Office                       | Noyes 102 D                        |
-| Office Hours                 | 10:30am - 12:30pm on Tue, Thu, Fri |
-| Email and<br>Microsoft Teams | michael.olson2@snow.edu            |
-| Phone:                       | (435) 283-7516                     |
 
-## Course Description
-Students will learn to efficiently find structures and patterns in large data sets. Topics will include acquiring data sets and cleaning messy and noisy raw data sets into structured and abstract forms; applying scalable and probabilistic algorithms to these well-structured abstract data sets; and, formally modeling and analyzing the error inherent in these methods. Students will consider data representations and trade-offs between accuracy and scalability.
+| __Instructor__      | __Dr. Michael E. Olson__                                           |
+| :------------------ | :----------------------------------------------------------------- |
+| __Email__           | michael.olson2@snow.edu                                            |
+| __Office Hours__    | 2:00 pm - 3:00 pm Monday-Thursday (in person) and<br>3:00 pm - 4:00 pm Monday-Thursday (online) or by appointment                |
+| __Office__          | GRSC 312, Ephraim Campus                                           |
+| __Microsoft Teams__ | Instant Messaging & Video Calls available through Microsoft Teams - Use my @snow.edu address |
 
-This course will include a survey of data acquisition and cleaning tools; similarity search, clustering, regression/dimensionality reduction, graph analysis, PageRank, and small space summaries; and, recent developments and the application of these topics to modern applications, often relating to large internet-based companies.
+[My Office Schedule](https://docs.google.com/spreadsheets/d/1l6Z5ndgsixhoEFm65yo8SgkMB8Tv8KQTkz2CSJVxPOE/edit?usp=sharing)
 
-__Our class will meet Tuesdays and Thursdays, 8:00 am - 9:15 am in the Science Building (GRSC), Room 223__.
 
-## Prerequisites
-This course is for students who have successfully completed Math 3080 and either Math 2270 or Math 2250 with a C or better in each course.
+## Course Description (optional)
+This course provides an overview of handling large datasets and how to measure similarities between them. Students will learn techniques for measuring similarities between datasets and using them to make recommendations to individuals and society. Students will also learn the different classes of machine learning models and how to evaluate model performance.
+
+## Course Student Learning Outcomes
+At the end of this course, students will be able to do the following:
+1. Discuss issues involved with large datasets and solutions to handling and processing large datasets
+2. Use a variety of techniques to find similarities between large datasets
+3. Explain the differences between types of machine learning models
+4. Use a number of mathematical processes and models to predict the behavior of large datasets
+5. Use evaluation methods to determine the accuracy of models
 
 ## Textbook
 Textbook information is found on the [Textbook page](https://github.com/drolsonmi/math3280/blob/master/3280_Textbooks.md) of my Github site.
@@ -27,64 +32,92 @@ Textbook information is found on the [Textbook page](https://github.com/drolsonm
   * Install locally on your computer, or
   * Use [Google Colab](https://colab.research.google.com/) on Google Drive
 
-## Schedule
-A list of topics (along with a very tentative schedule) is found on the [Schedule page](https://github.com/drolsonmi/math3280/blob/master/3280_Schedule.md) of my Github site. The schedule may be changed based on progress through the semester.
-
-Important Dates:
-
-| Date      |                                        |
-| :-------- | :------------------------------------- |
-| Aug 26    | Last day to pay tuition & fees         |
-| Sep 1     | Labor Day - No School                  |
-| Sep 10    | Last day to add or to drop without a W |
-| Sep 26    | September Break - No School            |
-| Oct 16-20 | Fall Break                             |
-| Oct 31    | Last day to drop a class with a W      |
-| Nov 26-28 | Thanksgiving Break                     |
-| Dec 5     | Last day of classes                    |
-
 ## Grading Policy
-| Assignment	      | Percentage of Grade |
-| :---              | :---:               |
-| Homework	        | 35%                 |
-| Computer Projects | 25%                 |
-| Midterm Exam      | 20%                 |
-| Final Exam	      | 20%                 |
+| Assignment   | Percentage of Grade |
+| :----------- | :-----------------: |
+| Homework     | 20%                 |
+| Projects     | 40%                 |
+| Exams        | 40%                 |
 
-__Homework__ will be assigned using Canvas. Each assignment will consist of questions from the textbooks, or questions relevant to the textbook sections. You can complete and submit the questions either on paper (after which you will scan using the "Canvas Student" app) or electronically. Assignments will be graded within a week after the due date.
+### Overview of Course Units
+Everything in this course looks at working with Big Data. However, we'll separate this course into 4 segments to better guide our learning:
+1. Handling Big Data
+2. Big Data Tools
+3. Big Data Comparisons
+4. Machine Learning Models
 
-__Class Projects__ will be assigned throughout the semester. These will be opportunities for you to apply what you are learning in lecture and in the homework in a more realistic scenario.
+### Assignment Overview
+__Homework__ will be assigned using Canvas, GitHub Classroom, and/or DataCamp. Instructions will be given on how to access these assignments in the first week of class.
 
-The __Midterm Exam__ will be administered around week 8 or 9 of the semester and will cover material covered from the beginning of the semester up until that point. __The Final Exam__ will be a comprehensive exam covering material from the entire semester. The date of the final exam is indicated on the semester schedule. Details for the exams will be given in class as the time approaches.
+__Projects__ will be assigned occassionally throughout the semester. These will be opportunities for you to apply what you are learning in lectures and homework assignments but in a more realistic scenario.
 
->A request to take a final exam at any time other time than when it is officially scheduled must be initiated with the professor and approved by the Dean or Department Chair at least two weeks before the scheduled final exam. A charge of $50.00 per exam will be assessed if the request is approved.
+__Exams__ will be administered a few times throughout the semester to help students assimilate all the information from one segment to put everything into perspective. Exams are an opportunity for students to show the instructor how much has been learned. It is also an opportunity for students to step back and get a full-view picture of what they have been learning.
+1. Exam 1 will cover the units on "Handling Big Data" and "Big Data Tools"
+2. Exam 2 will cover the unit "Big Data Comparisons"
+3. The __Final Exam__ will be a comprehensive exam covering material from the entire semester.
 
+
+## Policies
 ### Late Policy
-All __homework assignments and class projects__ will be accepted for 70% credit for one week after the due date. Assignments submitted one week after the due date or later will not be accepted.
+* Late homework and projects will receive 70% credit for 1 week after the due date. No credit will be given if it’s more than 1 week late.
+* Exams cannot be made up. If you know you will miss an exam, contact me at least a week before the exam to schedule another time to take the exam.
 
->I understand that emergencies happen. If you have a need for a late submission, just come talk to me. However, I reserve the right to deny a request for a late submission if you have already been granted 3 late submissions.
+Throughout the semester, I allow 3 late assignment submissions throughout the semester with no questions asked. These late submissions can be applied to:
+* homework
+* projects
 
-All __exams__ must be taken in the allotted time. If you cannot take the exam in the requested time, then you must *coordinate with me __no later than one week before the exam is due__*.
+If you would like to use one, just let me know you would like to use a late submission and what assignment or project you would like to use it on. I will then go in and extend the due date for another week so you have time to complete it for full credit.
 
-### Grading Scheme
-| Grade	| Percentages |   | Grade | Percentages |
-| :---  | :---:       |---| :---  | :---:       |
-| A	    | 93% - 100%  |   | C	    | 73% - 76%   |
-| A-  	| 90% - 92%   |   | C-    | 70% - 72%   |
-| B+    | 87% - 89%   |   | D     | 63% - 66%   |
-| B     | 83% - 86%   |   | D-    | 60% - 62%   |
-| B-    | 80% - 82%   |   | D+    | 67% - 69%   |
-| C+    | 77% - 79%   |   | F     | 0 – 59%     |
+All late assignments must be approved by two weeks before the last day of the semester.
 
-A grade of “I” (incomplete) cannot be issued unless arrangements have been made with your instructor before the last day of class. In addition, don’t expect the college to give you a “W” (withdrawal) if you disappear from school. They won’t do it. Instead, you will get a grade of “F” for the course. No exceptions. So if you must leave, please drop the course officially through the admissions and records office.
+The last day to turn in late assignments is one week before the last day of the semester.
 
-## General Class Guidelines
-My classroom policies can be summarized by three points:
-1. Be honest.
-2. Be courteous to other students.
-3. Be dedicated to your education.
+### Extra Credit Policy
+As your instructor, my duty is to teach you and to achieve the outcomes outlined above. As such, I teach this course with a goal of understanding the material and satisfying those outcomes.
 
-## Snow College Policies
+The concept of extra credit demonstrates that the goal is not to understand, but to just earn enough points to make it through. Extra credit undermines the goals of the course.
+
+As such, *I will not award extra credit for the sake of getting more points*. If I see a need through the semester and as appropriate for the course, I will add extra assignments as needed, but with the express purpose of helping to understand difficult topics.
+
+There is no need to ask if I will offer extra credit. If I do, I will inform you.
+
+### Academic Integrity
+You have paid me to learn everything you can. Academic dishonesty is thus a waste of the time and money you have committed to your education. Additionally, dishonest performance will *ruin* your future careers (assuming, of course, that you can get a career). I do not tolerate dishonesty in the classroom.
+
+#### AI Usage
+Generative AI is a technology that uses statistics and random probabilities to automate part or all of the writing and content creation process. As Data Science students, we will eventually learn how Generative AI models work. In the meantime, know that is it all based on probability
+
+Skills in properly using Generative AI and Reponsible AI are critical for a Data Scientist. So, we need to properly use AI in our course. You may use AI to
+- Research more on topics
+- Help learn aspects of code (not entire project - must indicate what segments of your code are based on what you learned from AI)
+
+You may __not__ use AI to:
+- Search for answers
+- Complete large sections of code
+- Complete entire assignments
+
+Remember that AI is based on probability! If you rely on AI, there's a good chance it could be wrong. Also remember that *companies will not hire software engineers to rely entirely on AI*. Be honest to yourself so you can learn better and be a better employee in your careers.
+
+If you have questions about how to use generative AI effectively and responsibly in this class, please meet with me during office hours.
+
+#### Consequences for cheating
+Cheating for this class is considered to be using any resources to complete assignments or exams without actually understanding what is done. Examples of cheating include, but are not limited to,
+- Copying another students' work
+- Using AI to complete the assignment
+- Bringing extra notes that aren't allowed into exams
+
+Consequences for cheating are:
+- Homework and Projects
+    - Alerts and discussions with the professor
+    - 0 for assignments if the problems persist
+- Exams
+    - Depending on the evidence and the severity of the offense, consequences will vary from a 0 on the exam to a 0 for the entire course or expulsion/suspension from the college.
+    - There will be absolutely NO tolerance for cheating on the final exam. Cheating on the final exam will result in a failing grade for the course.
+- The professor has the right to determine other consequences based on the circumstances
+
+Your job in this class is to learn. The purpose of exams is to show me how much you have learned. Don't sacrifice your entire future by dishonesty. If you are concerned about upcoming exams, come talk to me and study.
+
+### Snow College Policies
 Click the links below for college-wide policies.
 * [Academic Integrity](https://snow.instructure.com/courses/474797#academic-integrity). Avoiding cheating and how acts of academic dishonesty are handled.
 * [Accommodations through the Office of Disability Services](https://snow.instructure.com/courses/474797#ada). How to arrange for help due to a disability.

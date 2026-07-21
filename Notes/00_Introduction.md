@@ -26,9 +26,13 @@ MathJax = {
     - Overfitting/Underfitting
     - Types of ML models
     - Evaluation of model performance
-- Linear Regression
-- k-Nearest Neighbors
-- KMeans
+- Machine Learning Models
+    - Linear Regression
+    - k-Nearest Neighbors
+    - KMeans
+- Ethics
+    - Graphical Ethics
+    - Responsible AI
 
 ## Outline of MATH 3280
 - What is Big Data?
@@ -52,3 +56,15 @@ MathJax = {
 ## Requirements for this class
 - At least a basic understanding of Calculus (I will explain more when needed)
 - Understanding of Linear Algebra
+
+## AI usage
+Statement on AI usage is in Syllabus. 
+
+What is AI?
+- We'll learn more in MATH 3480
+- Demonstrate basic probabilities in AI
+
+Consequences of improper AI usage:
+- 1st offense: 0 on assignment until you come talk to me
+- 2nd offense: penalty at discression of professor
+- 3rd offense: Reported to Academic Standards Committee

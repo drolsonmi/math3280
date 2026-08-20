@@ -22,8 +22,8 @@ The textbooks and videos are found on the [Textbooks](https://github.com/drolson
 | Oct 1   | Locality Sensitive Hashing                         |    |
 | Oct 6   | Frequent Itemsets                                  |    |
 | Oct 8   | *Itemsets Project*                                 |    |
-| Oct 13  | Recommendation Systems                             |    |
-| Oct 15  | PageRank                                           |    |
+| Oct 13  | PageRank                                           |    |
+| Oct 15  | Recommendation Systems                             |    |
 | Oct 20  | *Fall Break - No School*                           |    |
 | Oct 22  | TrustRank                                          |    |
 | Oct 27  | Singular Value Decomposition                       |    |

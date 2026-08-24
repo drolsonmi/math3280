@@ -44,6 +44,7 @@ The textbooks and videos are found on the [Textbooks](https://github.com/drolson
 
 
 Important Dates to note:
+
 | Date      |                                           |
 | :-------- | :---------------------------------------- |
 | Sep 1     | Last day to pay tuition & fees            |
@@ -51,7 +52,7 @@ Important Dates to note:
 | Sep 15    | Last day to add or to drop without a W    |
 | Sep 25    | September Break - No School               |
 | Oct 16-20 | Fall Break                                |
-| Nov 3    | Last day to drop a class with a W         |
+| Nov 3     | Last day to drop a class with a W         |
 | Nov 25-27 | Thanksgiving Break                        |
 | Dec 11    | Last day of classes                       |
 | Dec 16    | __FINAL EXAM__ at 7:00am in our classroom |

@@ -7,10 +7,10 @@ The textbooks and videos are found on the [Textbooks](https://github.com/drolson
 | Date    | Lecture                                            | Reading            |
 | :-----: | :------------------------------------------------- | :----------------- |
 | Aug 27  | Introduction                                       | Leskovec: 1.1, 1.3 |
-|         | __*----- Big Data -----*__                         |    |
+|         | __*----- Handling Big Data -----*__                |    |
 | Sep 1   | Cluster Computing                                  |    |
-| Sep 3   | Cluster Computing                                  |    |
-| Sep 8   | SQL/Spark                                          |    |
+| Sep 3   | Cluster Computing and SQL                          |    |
+| Sep 8   | Spark & *Big Data Project*                         |    |
 |         | __*----- Big Data Tools -----*__                   |    |
 | Sep 10  | Measures of Distance                               | Leskovec: 3.5 |
 | Sep 15  | Linguistic Tools (RegEx, TF-IDF)                   | Leskovec: 1.3 |
@@ -21,26 +21,26 @@ The textbooks and videos are found on the [Textbooks](https://github.com/drolson
 | Sep 29  | Similarities                                       |    |
 | Oct 1   | Locality Sensitive Hashing                         |    |
 | Oct 6   | Frequent Itemsets                                  |    |
-| Oct 8   | *Itemsets Project*                                 |    |
-| Oct 13  | PageRank                                           |    |
+| Oct 8   | Itemset Handling                                   |    |
+| Oct 13  | *Itemsets Project*                                 |    |
 | Oct 15  | Recommendation Systems                             |    |
 | Oct 20  | *Fall Break - No School*                           |    |
-| Oct 22  | TrustRank                                          |    |
-| Oct 27  | Singular Value Decomposition                       |    |
-| Oct 29  | Image Compression                                  |    |
-| Nov 3   | *Exam 2 Review*                                    |    |
+| Oct 22  | PageRank                                           |    |
+| Oct 27  | TrustRank & *PageRank Project*                     |    |
+| Oct 29  | Singular Value Decomposition                       |    |
+| Nov 3   | Image Compression                                  |    |
+| Nov 5   | *Exam 2 Review*                                    |    |
 |         | __*----- Machine Learning Models -----*__          |    |
-| Nov 5   | Review of ML Model Types and Evaluation Techniques |    |
-| Nov 10  | Multi-linear Regression                            |    |
-| Nov 12  | *Multi-linear Regression Project*                  |    |
-| Nov 17  | Principal Component Analysis                       |    |
-| Nov 19  | Gradient Descent                                   |    |
-| Nov 24  | Logistic Regression                                |    |
+| Nov 10  | Review of ML Model Types and Evaluation Techniques |    |
+| Nov 12  | Multi-linear Regression                            |    |
+| Nov 17  | *Multi-linear Regression Project*                  |    |
+| Nov 19  | Principal Component Analysis                       |    |
+| Nov 24  | Gradient Descent                                   |    |
 | Nov 26  | *Thanksgiving Break - No School*                   |    |
-| Dec 1   | *Logistic Regression Project*                      |    |
-| Dec 3   | *Final Exam Review*                                |    |
-| Dec 8   |                                                         |
-| Dec 10  |                                                         |
+| Dec 1   | Logistic Regression                                |    |
+| Dec 3   | *Logistic Regression Project*                      |    |
+| Dec 8   | *Final Exam Review*                                |    |
+| Dec 10  | *Final Exam Review*                                |    |
 
 
 Important Dates to note:

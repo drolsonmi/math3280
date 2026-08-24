@@ -40,6 +40,7 @@ MathJax = {
     - Programming for big data (at least a brief look)
 - Similarities between datasets
     - Data with words instead of values
+    - Comparisons between different itemsets (such as shopping carts)
 - Searching through Big Data
     - Recommendation Systems
     - PageRank
@@ -74,3 +75,17 @@ Consequences of improper AI usage:
     - Class Notes
     - Communication (via Teams and through OneNote)
     - Resources
+
+## What is Data Mining?
+* Data mining is the process of getting info from data. Really, all three semesters can be summarized as Data Mining
+  * Originally known as "Data Dredging", it was the process of trying to extract information that isn't always supported by the data. Not the most glamorous part of a statistician's job
+  * Later it focused more as "Big Data", which is gleaning information from large amounts of data
+  * Now known as "Data Mining", we now extract this information for the purpose of creating a model (which gets into adaptive modelling, or "Machine Learning")
+* This semester, we focus on Big Data: handling and managing large amounts of data
+
+How do we get information from large amounts of data?
+* Statistical Modeling (Linear regression, Normal distributions) <- 3080
+* Machine Learning (models such as Support Vector Machines and Neural Networks) <- 3480
+* Summarization (Google's PageRank) <- 3280
+* Feature Extraction (Frequent Itemsets, Recommendation Systems) <- 3280
+

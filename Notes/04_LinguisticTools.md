@@ -67,18 +67,18 @@ $$J_B(list, purchased) = \frac{\lvert list \cap purchased \rvert}{\lvert list \c
 
 Another example:
 
-|     |  S  |  T  |
-| --- | --- | --- |
-| x_0 |  1  |  0  |
-| x_1 |  0  |  1  |
-| x_2 |  0  |  0  |
-| x_3 |  1  |  1  |
-| x_4 |  0  |  1  |
-| x_5 |  1  |  0  |
-| x_6 |  1  |  1  | 
-| x_7 |  0  |  0  |
-| x_8 |  1  |  1  |  
-| x_9 |  0  |  1  |
+|       |   S   |   T   |
+| :---: | :---: | :---: |
+| $x_0$ |   1   |   0   |
+| $x_1$ |   0   |   1   |
+| $x_2$ |   0   |   0   |
+| $x_3$ |   1   |   1   |
+| $x_4$ |   0   |   1   |
+| $x_5$ |   1   |   0   |
+| $x_6$ |   1   |   1   | 
+| $x_7$ |   0   |   0   |
+| $x_8$ |   1   |   1   |  
+| $x_9$ |   0   |   1   |
 
 To do this, we look at only positive results (entries with a "1"). The intersection would be where both $S$ and $T$ are 1:
 $$\lvert S\cap T \rvert = 3$$

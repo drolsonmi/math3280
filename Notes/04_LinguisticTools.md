@@ -27,7 +27,7 @@ Venn diagram (Square brackets encompass elements of A, round brackets encompass 
 
 $$\Big[1 \Big( 3, 5 \Big] 4, 6\Big)$$
 
-There are 5 elements total, so |$A\cup B$| = 5. Only 2 elements are in both, so |$A\cup B$| = 2.
+There are 5 elements total, so \|$A\cup B$\| = 5. Only 2 elements are in both, so \|$A\cup B$\| = 2.
 
 $$J(A,B) = \frac{|A\cap B|}{|A\cup B|} = \frac{2}{5}$$
 

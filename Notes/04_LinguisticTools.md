@@ -27,7 +27,7 @@ Venn diagram (Square brackets encompass elements of A, round brackets encompass 
 
 $$\Big[1 \Big( 3, 5 \Big] 4, 6\Big)$$
 
-There are 5 elements total, so $\left| A\cup B \right| = 5$. Only 2 elements are in both, so $\left| A\cup B \right| = 2$.
+There are 5 elements total, so |$A\cup B$| = 5. Only 2 elements are in both, so |$A\cup B$| = 2.
 
 $$J(A,B) = \frac{|A\cap B|}{|A\cup B|} = \frac{2}{5}$$
 
@@ -50,8 +50,8 @@ But you forget the shopping list. So, you get what you can remember, plus some a
 
 What is the Jaccard similarity?
 
-$$\text{|list }\cap\text{ purchased|} = \text{|{milk, eggs, chips, salsa}|}=4$$
-$$\text{|list }\cup\text{ purchased|} = \text{|{milk, eggs, bread, chips, salsa, yogurt, cheese, ice cream}|}=8$$
+$$\text{\|list }\cap\text{ purchased\|} = \text{\|{milk, eggs, chips, salsa}\|}=4$$
+$$\text{\|list }\cup\text{ purchased\|} = \text{\|{milk, eggs, bread, chips, salsa, yogurt, cheese, ice cream}\|}=8$$
 $$J(list, purchased) = \frac{\text{|list }\cap\text{ purchased|}}{\text{|list }\cup\text{ purchased|}} = \frac{4}{8}=0.5$$
 
 Notice that we did not repeat milk or chips. For the Jaccard Similarity, we only consider similar items, not repeats. For the Jaccard Bag Similarity, we do consider repeats.

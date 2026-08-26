@@ -35,12 +35,12 @@ There are two similarity calculations:
 * Jaccard Similarity
   * Union is all elements, not repeated - just looking at possible values
 
-$$|A\cup B| = \big|\{1, 3, 4, 5, 6\}\big| = 5 \qquad J(A,B) = \frac{2}{5}$$
+$$\left| A\cup B \right| = \big|\{1, 3, 4, 5, 6\}\big| = 5 \qquad J(A,B) = \frac{2}{5}$$
 
 * Jaccard Bag Similarity
   * Union is all elements in both sets combined, as if they were two bags mixed together
 
-$$|A\cup B| = \big|\{1, 3, 5, 3, 4, 5, 6\}\big| = 7 \qquad J_B(A,B) = \frac{2}{7}$$
+$$\left| A\cup B \right| = \big|\{1, 3, 5, 3, 4, 5, 6\}\big| = 7 \qquad J_B(A,B) = \frac{2}{7}$$
 
 Example #2: You create a shopping list including,
 * Milk (2), eggs, bread, chips (3), salsa
@@ -49,18 +49,18 @@ But you forget the shopping list. So, you get what you can remember, plus some a
 * Milk (3), eggs, chips (1), salsa, yogurt, cheese, ice cream
 
 What is the Jaccard similarity?
-$$|list \cap purchased| = |\{\text{milk, eggs, chips, salsa}\}|=4$$
-$$|list \cup purchased| = |\{\text{milk, eggs, bread, chips, salsa, yogurt, cheese, ice cream}\}|=8$$
-$$J(list, purchased) = \frac{|list \cap purchased|}{|list \cup purchased|} = \frac{4}{8}=0.5$$
+$$\left| list \cap purchased \right| = \left| \{\text{milk, eggs, chips, salsa}\}\left|=4$$
+$$\left| list \cup purchased \right| = \right| \{\text{milk, eggs, bread, chips, salsa, yogurt, cheese, ice cream}\}\right|=8$$
+$$J(list, purchased) = \frac{\left| list \cap purchased \right|}{\left| list \cup purchased \right|} = \frac{4}{8}=0.5$$
 
 Notice that we did not repeat milk or chips. For the Jaccard Similarity, we only consider similar items, not repeats. For the Jaccard Bag Similarity, we do consider repeats.
 * For chips, it was on the list 3 times, but we only bought 1, so it is only counted once (1)
 * For milk, it was bought 3 times, but only on the list 2 times, so there are only two (2) matched pairs
-  * $|list \cap purchased|$ = |milk, milk, eggs, chips, salsa| = 5
+  * $\left| list \cap purchased \right|$ = |milk, milk, eggs, chips, salsa| = 5
 * The union is all items, even if repeated
-  * $|list \cup purchased|$ = |milk, milk, eggs, bread, chips, chips, chips, salsa, milk, milk, milk, eggs, chips, salsa, yogurt, cheese, ice cream| = 17
+  * $\left| list \cup purchased \right|$ = |milk, milk, eggs, bread, chips, chips, chips, salsa, milk, milk, milk, eggs, chips, salsa, yogurt, cheese, ice cream| = 17
 
-$$J_B(list, purchased) = \frac{|list \cap purchased|}{|list \cup purchased|} = \frac{5}{17}=0.294$$
+$$J_B(list, purchased) = \frac{\left| list \cap purchased \right|}{\left| list \cup purchased \right|} = \frac{5}{17}=0.294$$
 
 Another example:
 
@@ -78,10 +78,10 @@ Another example:
 | x_9 |  0  |  1  |
 
 To do this, we look at only positive results (entries with a "1"). The intersection would be where both $S$ and $T$ are 1:
-$$|S\cap T| = 3$$
+$$\left| S\cap T \right| = 3$$
 
 The union would be all entries where either $S$ or $T$ have a 1:
-$$|S\cup T| = 8$$
+$$\left| S\cup T \right| = 8$$
 
 We can consider, instead of a list of all datapoints, just count the number of all possibilities.
 
@@ -99,10 +99,10 @@ or, looking at it with a confusion matrix,
 |  T=1 |   3   |   3   |
 |  T=0 |   2   |   2   |
 
-$$|S\cap T| = 3 \qquad |S \cup T| = 3+3+2 = 8$$
+$$\left| S\cap T \right| = 3 \qquad \left| S \cup T \right| = 3+3+2 = 8$$
 
 Either way, the Jaccard Similarity is,
-$$|S\cap T| = 3 \qquad |S\cup T| = 8 \qquad J(S,T) = \frac{|S\cap T|}{|S\cup T|} = \frac{3}{8}$$
+$$\left| S\cap T \right| = 3 \qquad \left| S\cup T \right| = 8 \qquad J(S,T) = \frac{\left| S\cap T \right|}{\left| S\cup T \right|} = \frac{3}{8}$$
 
 The Jaccard Bag Similarity,
 $$J_B(S,T) = \frac{3}{11}$$

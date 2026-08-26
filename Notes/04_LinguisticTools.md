@@ -50,16 +50,16 @@ But you forget the shopping list. So, you get what you can remember, plus some a
 
 What is the Jaccard similarity?
 
-$$|list \cap purchased| = |{milk, eggs, chips, salsa}| = 4$$
+$$\text{|list }\cap\text{ purchased|} = \text{|{milk, eggs, chips, salsa}|} = 4$$
 $$\text{|list }\cup\text{ purchased|} = \text{|{milk, eggs, bread, chips, salsa, yogurt, cheese, ice cream}|} = 8$$
 $$J(list, purchased) = \frac{\text{|list }\cap\text{ purchased|}}{\text{|list }\cup\text{ purchased|}} = \frac{4}{8}=0.5$$
 
 Notice that we did not repeat milk or chips. For the Jaccard Similarity, we only consider similar items, not repeats. For the Jaccard Bag Similarity, we do consider repeats.
 * For chips, it was on the list 3 times, but we only bought 1, so it is only counted once (1)
 * For milk, it was bought 3 times, but only on the list 2 times, so there are only two (2) matched pairs
-  * |list $\cap$ purchased| = |milk, milk, eggs, chips, salsa| = 5
+  * \|list $\cap$ purchased\| = \|milk, milk, eggs, chips, salsa\| = 5
 * The union is all items, even if repeated
-  * |list $\cup$ purchased| = |milk, milk, eggs, bread, chips, chips, chips, salsa, milk, milk, milk, eggs, chips, salsa, yogurt, cheese, ice cream| = 17
+  * \|list $\cup$ purchased\| = \|milk, milk, eggs, bread, chips, chips, chips, salsa, milk, milk, milk, eggs, chips, salsa, yogurt, cheese, ice cream\| = 17
 
 $$J_B(list, purchased) = \frac{\left| list \cap purchased \right|}{\left| list \cup purchased \right|} = \frac{5}{17}=0.294$$
 

@@ -27,7 +27,7 @@ Venn diagram (Square brackets encompass elements of A, round brackets encompass 
 
 $$\Big[1 \Big( 3, 5 \Big] 4, 6\Big)$$
 
-There are 5 elements total, so $|A\cup B| = 5$. Only 2 elements are in both, so $|A\cup B| = 2$.
+There are 5 elements total, so $\left| A\cup B \right| = 5$. Only 2 elements are in both, so $\left| A\cup B \right| = 2$.
 
 $$J(A,B) = \frac{|A\cap B|}{|A\cup B|} = \frac{2}{5}$$
 
@@ -49,16 +49,17 @@ But you forget the shopping list. So, you get what you can remember, plus some a
 * Milk (3), eggs, chips (1), salsa, yogurt, cheese, ice cream
 
 What is the Jaccard similarity?
-$$\left| list \cap purchased \right| = \left| \{\text{milk, eggs, chips, salsa}\}\left|=4$$
-$$\left| list \cup purchased \right| = \right| \{\text{milk, eggs, bread, chips, salsa, yogurt, cheese, ice cream}\}\right|=8$$
+
+$$\left| list \cap purchased \right| = \left| \{\text{milk, eggs, chips, salsa}\}\right|=4$$
+$$\left| list \cup purchased \right| = \left| \{\text{milk, eggs, bread, chips, salsa, yogurt, cheese, ice cream}\}\right|=8$$
 $$J(list, purchased) = \frac{\left| list \cap purchased \right|}{\left| list \cup purchased \right|} = \frac{4}{8}=0.5$$
 
 Notice that we did not repeat milk or chips. For the Jaccard Similarity, we only consider similar items, not repeats. For the Jaccard Bag Similarity, we do consider repeats.
 * For chips, it was on the list 3 times, but we only bought 1, so it is only counted once (1)
 * For milk, it was bought 3 times, but only on the list 2 times, so there are only two (2) matched pairs
-  * $\left| list \cap purchased \right|$ = |milk, milk, eggs, chips, salsa| = 5
+  * |list $\cap$ purchased|$ = |milk, milk, eggs, chips, salsa| = 5
 * The union is all items, even if repeated
-  * $\left| list \cup purchased \right|$ = |milk, milk, eggs, bread, chips, chips, chips, salsa, milk, milk, milk, eggs, chips, salsa, yogurt, cheese, ice cream| = 17
+  * |list $\cup$ purchased|$ = |milk, milk, eggs, bread, chips, chips, chips, salsa, milk, milk, milk, eggs, chips, salsa, yogurt, cheese, ice cream| = 17
 
 $$J_B(list, purchased) = \frac{\left| list \cap purchased \right|}{\left| list \cup purchased \right|} = \frac{5}{17}=0.294$$
 

@@ -16,22 +16,30 @@ MathJax = {
 ## Jaccard Similarity
 The Jaccard Similarity compares two pieces of information to see how similar they are. Each row is a set
 The calculation is,
+
 $$J(S,T) = \frac{|S\cap T|}{|S\cup T|}$$
 
 A simple example:
+
 $$A = \{1, 3, 5\} \qquad B = \{3, 4, 5, 6\}$$
+
 Venn diagram (Square brackets encompass elements of A, round brackets encompass elements of B):
+
 $$\Big[1 \Big( 3, 5 \Big] 4, 6\Big)$$
 
 There are 5 elements total, so $|A\cup B| = 5$. Only 2 elements are in both, so $|A\cup B| = 2$.
+
 $$J(A,B) = \frac{|A\cap B|}{|A\cup B|} = \frac{2}{5}$$
 
 There are two similarity calculations:
 * Jaccard Similarity
   * Union is all elements, not repeated - just looking at possible values
+
 $$|A\cup B| = \big|\{1, 3, 4, 5, 6\}\big| = 5 \qquad J(A,B) = \frac{2}{5}$$
+
 * Jaccard Bag Similarity
   * Union is all elements in both sets combined, as if they were two bags mixed together
+
 $$|A\cup B| = \big|\{1, 3, 5, 3, 4, 5, 6\}\big| = 7 \qquad J_B(A,B) = \frac{2}{7}$$
 
 Example #2: You create a shopping list including,

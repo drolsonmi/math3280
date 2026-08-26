@@ -35,12 +35,12 @@ There are two similarity calculations:
 * Jaccard Similarity
   * Union is all elements, not repeated - just looking at possible values
 
-$$\left| A\cup B \right| = \big|\{1, 3, 4, 5, 6\}\big| = 5 \qquad J(A,B) = \frac{2}{5}$$
+$$\lvert A\cup B \rvert = \big|\{1, 3, 4, 5, 6\}\big| = 5 \qquad J(A,B) = \frac{2}{5}$$
 
 * Jaccard Bag Similarity
   * Union is all elements in both sets combined, as if they were two bags mixed together
 
-$$\left| A\cup B \right| = \big|\{1, 3, 5, 3, 4, 5, 6\}\big| = 7 \qquad J_B(A,B) = \frac{2}{7}$$
+$$\lvert A\cup B \rvert = \big|\{1, 3, 5, 3, 4, 5, 6\}\big| = 7 \qquad J_B(A,B) = \frac{2}{7}$$
 
 Example #2: You create a shopping list including,
 * Milk (2), eggs, bread, chips (3), salsa
@@ -51,7 +51,9 @@ But you forget the shopping list. So, you get what you can remember, plus some a
 What is the Jaccard similarity?
 
 $$\lvert list \cap purchased \rvert = \lvert\{milk, eggs, chips, salsa\}\rvert = 4$$
+
 $$\lvert list \cup purchased \rvert = \lvert\{milk, eggs, bread, chips, salsa, yogurt, cheese, ice cream\}\rvert = 8$$
+
 $$J(list, purchased) = \frac{\lvert list \cap purchased \rvert}{\lvert list \cup purchased \rvert} = \frac{4}{8}=0.5$$
 
 Notice that we did not repeat milk or chips. For the Jaccard Similarity, we only consider similar items, not repeats. For the Jaccard Bag Similarity, we do consider repeats.
@@ -61,7 +63,7 @@ Notice that we did not repeat milk or chips. For the Jaccard Similarity, we only
 * The union is all items, even if repeated
   * \|list $\cup$ purchased\| = \|milk, milk, eggs, bread, chips, chips, chips, salsa, milk, milk, milk, eggs, chips, salsa, yogurt, cheese, ice cream\| = 17
 
-$$J_B(list, purchased) = \frac{\left| list \cap purchased \right|}{\left| list \cup purchased \right|} = \frac{5}{17}=0.294$$
+$$J_B(list, purchased) = \frac{\lvert list \cap purchased \rvert}{\lvert list \cup purchased \rvert} = \frac{5}{17}=0.294$$
 
 Another example:
 
@@ -79,10 +81,10 @@ Another example:
 | x_9 |  0  |  1  |
 
 To do this, we look at only positive results (entries with a "1"). The intersection would be where both $S$ and $T$ are 1:
-$$\left| S\cap T \right| = 3$$
+$$\lvert S\cap T \rvert = 3$$
 
 The union would be all entries where either $S$ or $T$ have a 1:
-$$\left| S\cup T \right| = 8$$
+$$\lvert S\cup T \rvert = 8$$
 
 We can consider, instead of a list of all datapoints, just count the number of all possibilities.
 
@@ -100,10 +102,10 @@ or, looking at it with a confusion matrix,
 |  T=1 |   3   |   3   |
 |  T=0 |   2   |   2   |
 
-$$\left| S\cap T \right| = 3 \qquad \left| S \cup T \right| = 3+3+2 = 8$$
+$$\lvert S\cap T \rvert = 3 \qquad \lvert S \cup T \rvert = 3+3+2 = 8$$
 
 Either way, the Jaccard Similarity is,
-$$\left| S\cap T \right| = 3 \qquad \left| S\cup T \right| = 8 \qquad J(S,T) = \frac{\left| S\cap T \right|}{\left| S\cup T \right|} = \frac{3}{8}$$
+$$\lvert S\cap T \rvert = 3 \qquad \lvert S\cup T \rvert = 8 \qquad J(S,T) = \frac{\lvert S\cap T \rvert}{\lvert S\cup T \rvert} = \frac{3}{8}$$
 
 The Jaccard Bag Similarity,
 $$J_B(S,T) = \frac{3}{11}$$

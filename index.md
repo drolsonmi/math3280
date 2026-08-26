@@ -10,17 +10,17 @@ On this site, I have a number of resources, notes, and helps for you through the
 ## Class Notes
 (I am adapting my class notes to be posted on this page. As they are prepared, I will post them here.)
 
-- Course Introduction
+- [Course Introduction](./Notes/00_Introduction.md)
 
 ### Big Data
-- Cluster Computing
-- SQL/Spark
+- [Cluster Computing](./Notes/01_BigData.md)
+- [SQL/Spark](./Notes/02_SQLandSPARK.md)
 
 ### Big Data Tools
-- Linear Algebra review
-- Math Tools
+- [Math Tools](./Notes/03_DistanceMeasures.md)
+    - Linear Algebra review
     - Measures of Distance
-- Linguistic Tools
+- [Linguistic Tools](./Notes/04_LinguisticTools.md)
     - Hash Functions
 
 ### Big Data Comparisons

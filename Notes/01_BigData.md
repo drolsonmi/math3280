@@ -53,11 +53,10 @@ With so many failures, we have to ensure no disruption in data or in calculation
 A __distributed file system (DFS)__ works by dividing the data file into separate pieces and copying them.
 1. Files are divided into __chunks__, typically 64 MB
     * Size can be determined by the user
-2. Each chunk is saved on different nodes
-3. Each chunk is the replicated and saved on different nodes, perhaps 3 times
+2. Each chunk is the replicated and saved on different nodes
     * Number of copies can be determined by the user
     * The nodes holding the copies should be on different racks so copies aren't all lost if a rack fails
-4. A __master node__ (or name node) tracks the location of all chunks so retrieval is simplified
+3. A __master node__ (or name node) tracks the location of all chunks so retrieval is simplified
     * The master node is also replicated
 
 A DFS is often used when,

@@ -287,6 +287,7 @@ What makes a word in a document important?
 
 We'll calculate using the $TF.IDF$ (Term Frequency times Inverse Document Frequency)
 * Term frequency ($TF_{ij}$): number of occurrences of word $i$ normalized in document $j$
+
 $$TF_{ij} = \frac{f_{ij}}{max_k f_{kj}}$$
 
 | __*Frequency*__ | Doc 0 | Doc 1 | Doc 2 |
@@ -306,23 +307,19 @@ $$max_k f_{k0} = 7 \qquad max_k f_{k1} = 9 \qquad max_k f_{k2} = 6$$
 * Inverse Document Frequency ($IDF_i$): Inverse ratio of documents containing word $i$ on a logarithmic scale
   * If $n_i$ documents out of $N$ documents contain word $i$, then the ratio is $\frac{n_i}{N}$
   * The inverse ratio is $\frac{N}{n_i}$
-  * Put onto a logarithmic scale
+  * Put onto a logarithmic scale:
+
+$$IDF_i = \log_2\left(\frac{N}{n_i}\right)$$
 
 ![Logarithm function](./images/04_log.png)
 
 On an inverse logarithmic scale, words that appear in fewer documents ($n_i$) will give a large $IDF$, which should be the case for words that are unique to specific topics. But if the word appears in more documents, then the $IDF$ will approach 0.
 
-$$IDF_i = \log_2\left(\frac{N}{n_i}\right)$$
-
-| __*TF*__ | Doc 0 | Doc 1 | Doc 2 |
-| -------: | :---: | :---: | :---: |
-|   Word 0 |   1   |  8/9  |  2/3  |
-|   Word 1 |  2/7  |  4/9  |   1   |
-|   Word 2 |  5/7  |   1   |   0   |
-
 $$IDF_0 = \log_2\left(\frac{3}{3}\right) = 0$$
 $$IDF_1 = \log_2\left(\frac{3}{3}\right) = 0$$
 $$IDF_2 = \log_2\left(\frac{3}{2}\right) = 0.58$$
+
+The TF.IDF is the product of the two. So, for word $i$ and document $j$, $TF.IDF = TF_{ij}*IDF_i$.
 
 | __*TF.IDF*__ | Doc 0              | Doc 1           | Doc 2        |
 | -----------: | :----------------: | :-------------: | :----------: |

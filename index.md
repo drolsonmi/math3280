@@ -24,7 +24,7 @@ On this site, I have a number of resources, notes, and helps for you through the
     - Hash Functions
 
 ### Big Data Comparisons
-- Similarities
+- [Similarities](./Notes/05_Similarities.md)
 - Locality Sensitive Hashing
 - Itemsets
 - PageRank

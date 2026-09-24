@@ -131,6 +131,7 @@ Datasets can be very large, and calculating the Jaccard Similarity can be resour
 3. Repeat this process $n$ times to create a __signature__.
 
 First, we permute the rows:
+
 | Element |  S1   |  S2   |  S3   |  S4   |
 | :-----: | :---: | :---: | :---: | :---: |
 |    e    |   0   |   1   |   1   |   0   |
@@ -140,6 +141,7 @@ First, we permute the rows:
 |    d    |   1   |   0   |   0   |   1   |
 
 Second, we choose the first value that appears in each set.
+
 |  S1   |  S2   |  S3   |  S4   |
 | :---: | :---: | :---: | :---: |
 |  a    |  e    |  e    |  c    |
@@ -177,8 +179,11 @@ Then repeat this 100+ times.
 > | acebd        |   a   |   c   |   a   |   c   |
 
 The column is then the signature for that set, and we find the similarity between two signatures.
+
 $$J(S_1,S_2) = \frac{\#~of~matches}{\#~of~pairs} = \frac{|(c,c),(c,c)|}{|(a,e),(c,c),(c,c),(d,b),(c,b),(d,c),(a,c)|} = \frac{2}{7}$$
+
 $$J(S_1,S_3) = \frac{1}{7} \qquad J(S_1,S_4) = \frac{5}{7}$$
+
 $$J(S_2,S_3) = \frac{1}{7} \qquad J(S_2,S_4) = \frac{3}{7} \qquad J(S_3,S_4) = \frac{0}{7}$$
 
 See the [Similarities iPython Notebook](./Code/05_Similarities.ipynb) to see examples of how this is done.
@@ -193,10 +198,10 @@ The math of this relationship:
        * In a Venn diagram, the intesection would be group $X$, the rest of the area inside the dataset is group $Y$, and the area outside the diagram is $Z$
          
 * Let $x$ be the number of rows of type $X$, or the number of rows where $S_1$ and $S_2$ are both 1
-  * $|S_1 \cap S_2| = x$
+  * $\lvert S_1 \cap S_2\lvert = x$
 * Let $y$ be the number of rows of type $Y$, or the number of rows where either $S_1$ or $S_2$ is 1, but not both (that is, everything *except* the intersection)
-  * $|S_1 \cancel{\cap} S_2| = y$
-  * $|S_1 \cup S_2| = |S_1 \cap S_2| + |S_1 \cancel{\cap} S_2| = x+y$
+  * $\lvert S_1 \cancel{\cap} S_2\lvert = y$
+  * $\lvert S_1 \cup S_2\lvert = \lvert S_1 \cap S_2\lvert + \lvert S_1 \cancel{\cap} S_2\lvert = x+y$
 * The Jaccard similarity would be:
 $$J(S_1,S_2) = \frac{|S_1 \cap S_2|}{|S_1 \cup S_2|} = \frac{x}{x+y}$$
 
@@ -233,6 +238,7 @@ Example:
 Obviously the third hash function has flaws. We'll include it, but only to show a point at the end.
 
 Here are the Jaccard Similarities for our 4 sets. We'll compare our final calculations to these similarities.
+
 |       | S1    | S2            | S3            | S4            |
 | :---: | :---: | :-----------: | :-----------: | :-----------: |
 |  S1   |       | $\frac{0}{3}$ | $\frac{1}{4}$ | $\frac{2}{3}$ |
@@ -307,6 +313,7 @@ Row 4:
 |     $h_4$     |   1   |   0   |   1   |   0   |
 
 Similarities from minhashing:
+
 |       | S1            | S2            | S3            | S4            |
 | :---: | :-----------: | :-----------: | :-----------: | :-----------: |
 |  S1   |               | $\frac{0}{3}$ | $\frac{1}{4}$ | $\frac{2}{3}$ |

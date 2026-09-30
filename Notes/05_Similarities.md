@@ -327,3 +327,74 @@ Important Note:
 * Note how $J(S1,S2) = 0$ is the actual similarity. How is it possible that we got a similarity $\ne 0$?
     * This came because of $h_3(x)$. Remember that this was a bad hash function. If we had avoided it, then this wouldn't have happened.
 
+> Worked out version of minhashing in [https://github.com/drolsonmi/math3280/blob/master/Notes/Code/05_Similarities.ipynb]
+
+## Locality Sensitive Hashing
+
+Even with the minhashed signature matrix, the calculations can still take too long. 
+* If you have 1,000,000 columns and you are finding the similarity of 2 columns at a time, then there will be $\binom{1,000,000}{2}$ calculations. That's about half a trillion pairs.
+
+To simplify, we are going to look at the first few rows and throw out any of the columns that don't show any similarity.
+1. Perform the minhash to get data signatures
+2. Separate the signatures into $b$ groups (or bands) of $r$ rows
+3. Columns with similar signature groups are known as a __candidate pair__.
+  * If the signatures in two columns are equal, then they have the potential to be similar. If they are not the same, then they are likely not similar.
+  * There is the possibility of a *false positive* when the signatures of two columns happen to be similar in the bands, but not in the entire column
+  * There is also the possibility of a *false negative* when the signatures of two columns are not similar in the bands, but the columns really are similar
+  * Statistically, the hope is that these *false positives* and *false negatives* are few since "the more similar two columns are, the more likely it is that they will be identical in some band."
+  * A possible way to improve is to look at the first $k$ bands and finding which candidate pairs have the most number of bands with similar signatures
+  
+In the following code, we take the signature matrix we made earlier and break it up into $b=25$ bands of $r=4$ rows each.
+* Notice how S2 and S5 have the same signtures in every group. This indicates a HIGH chance of being similar, so it is a *candidate pair*. 
+* S2 and S6 are close, but not quite there. However, in the third group, S2 and S6 have the same signatures. They can eventually be considered to be a *candidate pair* if no other similar columns are found, but since they are not similar in the first group, they are less likely to be similar and could be removed from consideration.
+* S3 and S4 never have the same signatures, so they have an extremely low chance of being similar, so they will not be considered
+
+> Worked out version of minhashing in [https://github.com/drolsonmi/math3280/blob/master/Notes/Code/05_Similarities.ipynb]
+
+How good is LSH? Consider probabilities:
+* The Jaccard Similarity is equal to the probability that the two values in any particular row are the same ($s = J(S_i, S_j)$)
+* Divide the signature matrix into $b$ bands of $r$ rows each
+
+The following are the calculated probabilities:
+* The probability that all signatures in a given band agree is $s^r$
+* The probability that at least one row in a given band disagrees is $1 - s^r$
+* The probability that at least one row in all bands disagrees is $(1-s^r)^b$
+* The probability that all signatures agree in at least one band is $1 - (1-s^r)^b$
+
+This last probability is what we want - the probability that the columns in any one band will agree. This function actually looks like an S-curve. If two columns have a low Jaccard similarity, they have little chance that the signatures in any band will agree, so little chance of becoming a candidate pair. On the other hand, if two columns have a high Jaccard similarity, there is a higher chance that the signatures in any band will agree.
+
+Above, we broke our signature matrix into $b=25$ bands of $r=4$ each. Following is a calculation and graph of the function $1 - (1-s^r)^b$ function.
+
+![S-curve for Jaccard Probability](./images/05_scurve.png)
+
+Here are a couple things to look at to analyze this graph:
+
+1. Looking at this data, we see that a pair of columns has at least a 50% chance of becomming a candidate pair when the Jaccard similarity is a little over 0.4 or higher.
+    * The probability jumps from 0.18 to 0.80 (a difference of over 0.6) when $s$ increases from 0.3 to 0.5. That means that the slope where the probability is 50% ($s$ is just over 0.4) is roughly $0.6/0.2 = 3$.
+    * This shows a pretty clear distinction between the two sides of the graph
+    * If two columns are not similar, then there is little chance that bands will agree, so little chance it will become a candidate pair
+    * If two columns are actually similar, then there is a high chance that bands will agree, so high chance it will become a candidate pair
+
+2. At $s=0.7$, we calculate the chance of one band not agreeing to be $1-0.7^4 = 0.7599$ (That is, a 75.99% chance of at least one disagreement in a band, or only a 24.01% chance that all agree). However, if we look at all 25 rows, then there is a $(1-0.7^4)^{25} = 0.0010$ (or $0.1\%$) chance that all bands disagree (that is, of the 25 bands, the one you look at has a 99.9% chance that the signatures agree).
+
+So, LSH actually does significantly increase the odds of finding columns with high Jaccard similarity.
+
+-----
+## Project
+* Using a dataset on food types consumed in different countries, find the food types that are most similar and the countries that consume those food types.
+  
+## Homework
+1. Exercise 3.1.1
+2. Exercise 3.1.2
+3. Exercise 3.2.1
+4. Exercise 3.2.2
+5. Exercise 3.3.1
+6. Exercise 3.3.3
+7. Exercise 3.3.4
+8. Exercise 3.3.8
+9. Exercise 3.4.1
+10. Exercise 3.4.2
+11. Exercise 3.5.1
+12. Exercise 3.5.2
+13. Exercise 3.5.4
+14. Exercise 3.5.5

@@ -23,6 +23,8 @@ A __market-basket__ model describes relationships between two kinds of objects.
 An itemset is said to be "frequent" if a subset of items appears in many baskets. Thinking of this mathematically, take an itemset $I$. 
 * Define the __support__ of $I$ to be the number of baskets for which $I$ is a subset
 * $I$ is frequent if $Support(I) > s$ where $s$ is the __support threshold__
+    - If the total number of items is small, a threshold of 1/2 of the total number of baskets is reasonable
+    - If the total number of items is large, the threshold might be smaller than 1% of the number of baskets
 
 Consider the following sets of letters:
 * {A, B, C}
@@ -94,6 +96,127 @@ $$Confidence(\{C,D\}\to\{A\}) = \frac{1}{3} \qquad Interest(\{C,D\}\to\{A\}) = \
 $$Confidence(\{B,C\}\to\{F\}) = \frac{1}{5} \qquad Interest(\{B,C\}\to\{F\}) = \frac{1}{4} - \frac{2}{8} = 0\qquad\qquad$$
 $$Confidence(\{A,D\}\to\{E\}) = 0 \qquad Interest(\{A,D\}\to\{E\}) = 0 - \frac{4}{8} = -\frac{1}{2}\qquad\qquad$$
 
-With large datasets, a "reasonably high" interest would be items in 1\% of the baskets.
+> Worked out example of Frequent Itemsets in [Itemsets iPython Notebook](https://github.com/drolsonmi/math3280/blob/master/Notes/Code/06_Itemsets.ipynb)
 
-> Worked out example of Frequent Itemsets in [https://github.com/drolsonmi/math3280/blob/master/Notes/Code/06_Itemsets.ipynb]
+# Itemset Handling
+## Calculations and Memory
+For a small company, the calculation could easily be done on one computer. For a large company, the number of transactions (baskets) is so large that the file holding it can't fit into the memory of one computer, so it needs to be done with some sort of Distributed File System and use an algorithm such as MapReduce to find frequent itemsets. But this can be really hard. It is addressed in more detail at the end of the chapter.
+
+Another possible problem that could take a lot of memory is the size of the baskets. Fortunately, most baskets are not that large. If we assume an average basket size of 20 items, then there are $\begin{pmatrix} 20 \\ 2 \end{pmatrix} = 190$ pairs of items. This can easily be done on a single computer.
+
+|      | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| 1    |      | x    | x    | x    | x    | x    | x    | x    | x    | x    |
+| 2    | x    |      | x    | x    | x    | x    | x    | x    | x    | x    |
+| 3    | x    | x    |      | x    | x    | x    | x    | x    | x    | x    |
+| 4    | x    | x    | x    |      | x    | x    | x    | x    | x    | x    |
+| 5    | x    | x    | x    | x    |      | x    | x    | x    | x    | x    |
+| 6    | x    | x    | x    | x    | x    |      | x    | x    | x    | x    |
+| 7    | x    | x    | x    | x    | x    | x    |      | x    | x    | x    |
+| 8    | x    | x    | x    | x    | x    | x    | x    |      | x    | x    |
+| 9    | x    | x    | x    | x    | x    | x    | x    | x    |      | x    |
+| 10   | x    | x    | x    | x    | x    | x    | x    | x    | x    |      |
+
+But that assumes we are doing pairs - only looking at 2 items at a time. If we want to look at larger subsets, the time for calculation increases. If it takes time $t$ to make one calculation, then the time it takes for the entire matrix is $n^k(t)$.
+* If we ignore the cases comparing an itemset with itself, the time simplifies to $n(n-1)(n-2)\dots (t)$
+
+$$(t)\prod_{i=0}^k (n-i)$$
+
+* Usually we only need to deal with a subset of $k=2$ or $3$, so this usually doesn't become an issue
+* In the rare cases where $k$ is large, there are often items in the basket that can be ignored and dropped, decreasing $n$.
+
+Three methods to simplify this process are commonly used:
+1. Triangular Matrix method
+2. Triples method
+3. A-Priori method
+
+### Triangular Matrix method
+Imagine a matrix of all items as rows and all items as columns. The values of the matrix would be the interest. However, note that the association between items A and B is nearly the same as between items B and A. So, let's just take the upper triangle of the matrix so that there are only values if $i<j$.
+
+|      | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| 1    |      | x    | x    | x    | x    | x    | x    | x    | x    | x    |
+| 2    |      |      | x    | x    | x    | x    | x    | x    | x    | x    |
+| 3    |      |      |      | x    | x    | x    | x    | x    | x    | x    |
+| 4    |      |      |      |      | x    | x    | x    | x    | x    | x    |
+| 5    |      |      |      |      |      | x    | x    | x    | x    | x    |
+| 6    |      |      |      |      |      |      | x    | x    | x    | x    |
+| 7    |      |      |      |      |      |      |      | x    | x    | x    |
+| 8    |      |      |      |      |      |      |      |      | x    | x    |
+| 9    |      |      |      |      |      |      |      |      |      | x    |
+| 10   |      |      |      |      |      |      |      |      |      |      |
+
+Once we have the triangular matrix, we can sort all values into an array, where the index $k$ is found by,
+$$k=(i-1)\left(n-\frac{i}{2}\right) + j - i$$
+
+where $1 \le i < j \le n$.
+* Note that we do not count when anything is paired with itself. $i$ is strictly less than $j$.
+
+> Worked out example of Triangular Matrix method in [Itemsets iPython Notebook](https://github.com/drolsonmi/math3280/blob/master/Notes/Code/06_Itemsets.ipynb)
+
+Since we are only considering cases where $i < j$, this changes from a full (sparse) $n\times n$ matrix to the upper triangle above the diagonal (an $(n-1)\times(n-1)$ triangle). If we are dealing with 4-byte integers, then this drops us from a matrix taking up $4n^2$ bytes down to $4\cdot\frac{1}{2}(n-1)^2 = 2(n-1)^2$ bytes.
+
+This is an improvement, but can still be sparse.
+
+### Triples method
+The advantage of the triples method is that we are only going to store information for each pair that *actually* occurs.
+
+The triples method involves taking a triple $[i,j,c]$ where $c$ is the count for the pair $\{i,j\}$.
+* Use a hash function with $i$ and $j$ to find where to store the data
+* Store the values of $i$, $j$, and $c$ at that location
+
+The advantage is that we are only storing data for each pair.
+
+The disadvantage is that for each pair, we have to store 3 values. If we are working with 4-byte integers, then that is 12 bytes per pair.
+* If more than 1/3 of possible pairs occur, the *triangular-matrix method* is better
+* If less than 1/3 of possible pairs occur, the *triples method* is better
+
+### A-Priori Algorithm
+This method is not too difficult. However, as is always the problem in the real world, we are dealing with very large amounts of data that can't always be held in main memory, much less do calculations with them. So, to simplify the process, we'll look at the __A-Priori__ algorithm, which only looks at the most frequent items.
+
+In order to understand the A-Priori algorithm, there are a few mathematical methods that need to be implemented. We won't go over these in detail here, but just give a quick summary. They are in section 6.2.3 - 6.2.4 of the *Leskovec* textbook.
+
+#### Monotonicity
+If a set $I$ of items is frequent, then so is every subset of $I$.
+
+A couple of points:
+* A subset $J\subseteq I$ has the same frequency if $J=I$
+* J could be more frequent as $J$ could be a part of multiple subsets of $I$
+
+Example:
+* $I = \{milk,bread,eggs,chips,salsa\}$
+* $J = \{milk,bread\}$
+* If there are 20 people who bought $I$, then by default, the same 20 people also bought $J$
+* Additionally, there are some people who did not get $I$, but still got $J$:
+    * $\{milk, bread, eggs\}$
+    * $\{milk, bread, chips\}$
+    * $\{milk, bread, chips, salsa\}$
+    * ...
+
+#### The Algorithm
+The basic principle of the A-Priori is to decrease the number of calculations. But in order to do this, we make 2 passes through the data instead of just 1.
+
+__Pass 1__: Go through the data and count the frequency of each item
+* Select only the items with a support over the support threshold (again, often around 1\%)
+* Begin with a list of $n$ items, narrow that down to $m$ items, where $m$ is a small fraction of $n$.
+
+__Pass 2__: For each basket, find only frequent items and count the pairs. Count all pairs for all baskets.
+
+If 50\% of the items are eliminated, then since we are dealing with pairs, there will only be 25\% of the calculations. This saves a lot on time and memory.
+
+In addition to being simple, this method can use monotonicity to find larger frequent $k$-sets.
+* Let $C_k$ be the set of candidate $k$-sets from the 1st pass
+* Find $L_k$, the set of truly frequent itemsets of size $k$
+* Use $L_k$ to find candidates for the $(k+1)$-set ($C_{k+1}$)
+
+From monotonicity, we know that there can only be the same (or fewer) number of frequent $(k+1)$-sets as there are frequent $k$-sets.
+* Each set $L_k$ gets smaller as $k$ increases
+* When $L_k$ is empty, then the largest frequent set is $L_{k-1}$
+
+--------
+## Homework
+* Exercise 6.1.1 a,b,c
+* Exercise 6.1.2
+* Exercise 6.1.5 a,b - Find both the confidence and the interest of each association rule
+* Exercise 6.1.7 a
+* Exercise 6.2.6 a

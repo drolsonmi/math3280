@@ -327,7 +327,7 @@ Important Note:
 * Note how $J(S1,S2) = 0$ is the actual similarity. How is it possible that we got a similarity $\ne 0$?
     * This came because of $h_3(x)$. Remember that this was a bad hash function. If we had avoided it, then this wouldn't have happened.
 
-> Worked out version of minhashing in [https://github.com/drolsonmi/math3280/blob/master/Notes/Code/05_Similarities.ipynb]
+> Worked out version of minhashing in [Similarities iPython Notebook](https://github.com/drolsonmi/math3280/blob/master/Notes/Code/05_Similarities.ipynb)
 
 ## Locality Sensitive Hashing
 
@@ -349,7 +349,7 @@ In the following code, we take the signature matrix we made earlier and break it
 * S2 and S6 are close, but not quite there. However, in the third group, S2 and S6 have the same signatures. They can eventually be considered to be a *candidate pair* if no other similar columns are found, but since they are not similar in the first group, they are less likely to be similar and could be removed from consideration.
 * S3 and S4 never have the same signatures, so they have an extremely low chance of being similar, so they will not be considered
 
-> Worked out version of minhashing in [https://github.com/drolsonmi/math3280/blob/master/Notes/Code/05_Similarities.ipynb]
+> Worked out version of LSH in [Similarities iPython Notebook](https://github.com/drolsonmi/math3280/blob/master/Notes/Code/05_Similarities.ipynb)
 
 How good is LSH? Consider probabilities:
 * The Jaccard Similarity is equal to the probability that the two values in any particular row are the same ($s = J(S_i, S_j)$)

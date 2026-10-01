@@ -25,8 +25,8 @@ On this site, I have a number of resources, notes, and helps for you through the
 
 ### Big Data Comparisons
 - [Similarities](./Notes/05_Similarities.md)
-- Locality Sensitive Hashing
-- Itemsets
+    - Locality Sensitive Hashing
+- [Itemsets](./Notes/06_Itemsets.md)
 - PageRank
 - Recommendation Systems
 - Singular Value Decomposition

@@ -27,9 +27,9 @@ On this site, I have a number of resources, notes, and helps for you through the
 - [Similarities](./Notes/05_Similarities.md)
     - Locality Sensitive Hashing
 - [Itemsets](./Notes/06_Itemsets.md)
-- PageRank
-- Recommendation Systems
-- Singular Value Decomposition
+- [Recommendation Systems](./Notes/07_RecommendationSystems.md)
+- [PageRank](./Notes/08_PageRank.md)
+- [Singular Value Decomposition](./Notes/09_SVDs.md)
     - Image Compression
 
 ### Machine Learning Models

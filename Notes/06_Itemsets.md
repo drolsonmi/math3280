@@ -61,40 +61,61 @@ Common applications of frequent itemsets:
 ## Association Rules
 Now, we want to look at how often different subsets appear together. A common application of this would be recommendation systems ("customers who bought what is in your cart also bought [item]"). To indicate the association of basket $I$ with item $j$ as $I\to j$.
 
+### Confidence
 So, how likely will basket $I$ be associated with $j$? We'll measure this be defining the __confidence__ of $I\to j$ as,
+
 $$Confidence(I\to j) = \frac{Support(I\cup \{j\})}{Support(I)}$$
 
 Using our earlier example, how likely is the set $I = \{B, C\}$ to be associated with $\{E\}$?
+
 $$Confidence(\{B,C\} \to \{E\}) = \frac{Support(\{B, C, E\})}{Support(\{B, C\})} = \frac{2}{5}$$
 
 Another way to think of this: The set $\{B,C\}$ appears 5 times. Of those 5 times, $E$ appears twice.
 
+### Interest
 The confidence is useful as long as $Support(I)$ is fairly large. However, the confidence means more when the association rule reflects a true relationship. So, we define the __interest__ of an association rule as the difference between the confidence and the fraction of baskets that contain $j$.
+
 $$Interest(I\to j) = Confidence(I\to j) - \frac{Support(\{j\})}{\text{\# of baskets}}$$
 
 The advantage to this is that if $I$ and $j$ aren't associated, then $Confidence(I\to j) \approx \frac{Support(\{j\})}{\text{\# of baskets}}$, so $Interest(\{B,C\}\to\{E\}) \approx 0$
 
 Using our earlier example,
+
 $$Interest(\{B,C\}\to\{E\}) = Confidence(\{B,C\} \to \{E\}) - \frac{Support(\{E\})}{8}$$
+
 $$Interest(\{B,C\}\to\{E\}) = \frac{Support(\{B, C, E\})}{Support(\{B, C\})} - \frac{Support(\{E\})}{8} = \frac{2}{5} - \frac{4}{8} = -\frac{1}{10}$$
 
-What do the numbers mean?
+What do the interest numbers mean?
 * If the interest is high, then $I$ has a high probability of causing $j$
 * If the interest is highly negative, then $I$ has a high probability of discouraging $j$
 * If the interest is near 0, then any association between $I$ and $j$ is likely coincidental
 
-How does this compare with others? Find the Confidence and Interest of the following associations:
+### Lift
+Another measure that is similar to the interest is the __lift__. The lift is a ratio between the confidence of I to j and the support of j.
+
+$$Lift(I\to j) = \frac{Confidence(I \to j)}{Support{j}/\text{# of baskets}}$$
+
+Again, using our earlier example,
+
+$$Lift(\B,C\}\to\{E\}) = \frac{Confidence(\{B,C\} \to \{E\})}{\tfrac{Support(\{E\})}{8}} = \frac{2/5}{4/8} = \frac{0.40}{0.50} = 0.80$$
+
+What do the lift numbers mean?
+* If the lift is greater than 1, then the confidence is larger than the support, so $I$ has a high probability of causing $j$
+* If the lift is less than 1, then the confidence is smaller than the support, so $I$ has a high probability of discouraging $j$
+* If the lift is near 0, then the confidence is equal to the support, so any association between $I$ and $j$ is likely coincidental
+
+How does this compare with others? Find the Confidence, Interest, and Lift of the following associations:
 * $\{A,B\}\to\{C\}$
 * $\{B,F\}\to\{E\}$
 * $\{C,D\}\to\{A\}$
 * $\{B,C\}\to\{F\}$
 * $\{A,D\}\to\{E\}$
   
-$$Confidence(\{A,B\}\to\{C\}) = \frac{1}{1} \qquad Interest(\{A,B\}\to\{C\}) = 1 - \frac{7}{8} = \frac{1}{8} = 0.125$$
-$$Confidence(\{B,F\}\to\{E\}) = \frac{1}{2} \qquad Interest(\{B,F\}\to\{E\}) = \frac{1}{2} - \frac{4}{8} = 0\qquad\qquad$$
-$$Confidence(\{C,D\}\to\{A\}) = \frac{1}{3} \qquad Interest(\{C,D\}\to\{A\}) = \frac{1}{3} - \frac{2}{8} = \frac{1}{12} = 0.0833$$
-$$Confidence(\{B,C\}\to\{F\}) = \frac{1}{5} \qquad Interest(\{B,C\}\to\{F\}) = \frac{1}{4} - \frac{2}{8} = 0\qquad\qquad$$
-$$Confidence(\{A,D\}\to\{E\}) = 0 \qquad Interest(\{A,D\}\to\{E\}) = 0 - \frac{4}{8} = -\frac{1}{2}\qquad\qquad$$
+$$Confidence(\{A,B\}\to\{C\}) = \frac{1}{1} \qquad Interest(\{A,B\}\to\{C\}) = 1 - \frac{7}{8} = \frac{1}{8} = 0.125 \qquad Lift(\{A,B\}\to\{C\}) = \frac{1/1}{7/8} = 1.14$$
+$$Confidence(\{B,F\}\to\{E\}) = \frac{1}{2} \qquad Interest(\{B,F\}\to\{E\}) = \frac{1}{2} - \frac{4}{8} = 0  \qquad Lift(\{B,F\}\to\{E\}) = \frac{1/2}{4/8} = 1.0$$
+$$Confidence(\{C,D\}\to\{A\}) = \frac{1}{3} \qquad Interest(\{C,D\}\to\{A\}) = \frac{1}{3} - \frac{2}{8} = \frac{1}{12} = 0.0833 \qquad Lift(\{C,D\}\to\{A\}) = \frac{1/3}{2/8} = 1.33$$
+$$Confidence(\{B,C\}\to\{F\}) = \frac{1}{5} \qquad Interest(\{B,C\}\to\{F\}) = \frac{1}{5} - \frac{2}{8} = -0.05 \qquad Lift(\{B,C\}\to\{F\}) = \frac{1/5}{2/8} = 0.80$$
+$$Confidence(\{A,D\}\to\{E\}) = 0 \qquad Interest(\{A,D\}\to\{E\}) = 0 - \frac{4}{8} = -\frac{1}{2} \qquad Lift(\{A,D\}\to\{E\}) = \frac{0}{1/2} = 0$$
 
 > Worked out example of Frequent Itemsets in [Itemsets iPython Notebook](https://github.com/drolsonmi/math3280/blob/master/Notes/Code/06_Itemsets.ipynb)
 
@@ -212,6 +233,27 @@ In addition to being simple, this method can use monotonicity to find larger fre
 From monotonicity, we know that there can only be the same (or fewer) number of frequent $(k+1)$-sets as there are frequent $k$-sets.
 * Each set $L_k$ gets smaller as $k$ increases
 * When $L_k$ is empty, then the largest frequent set is $L_{k-1}$
+
+__Example__:
+
+| Set   | Items        |
+| :---: | :----------- |
+| T1    | {A, B, C}    |
+| T2    | {A, C}       |
+| T3    | {A, D}       |
+| T4    | {B, C, E}    |
+| T5    | {A, B, C, E} |
+
+Let's set a support threshold of 2. Then,
+* $C_1$ is all items ${A, B, C, D, E}$
+* $L_1$ filters out $D$ since $Support(D)=1$. We are left with ${A, B, C, E}$
+* $C_2$ is the 6 pairs ${AB, AC, AE, BC, BE, CE}$ (excluding $D$ since it was eliminated)
+* $L_2$ filters out $AE$ since $Support(AE)=1$. We are left with ${AB, AC, BC, BE, CE}$
+* $C_3$ is the two triples ${ABC, BCE}$ (excludes $D$ and all $AE$ pairs were eliminated)
+* $L_3$ doesn't filter anything out since $Support(ABC) = Support(BCE) = 2$
+* $C_4$ is empty since every combination either has $D$ or $AE$
+
+So, we end up with the two largest itemsets being $ABC$ and $BCE$. 
 
 --------
 ## Homework

@@ -33,8 +33,8 @@ On this site, I have a number of resources, notes, and helps for you through the
     - Image Compression
 
 ### Machine Learning Models
-- Overview of Machine Learning Models
-- Multi-linear Regression
+- [Overview of Machine Learning Models](./Notes/10_MachineLearning.md)
+- [Multi-linear Regression](./Notes/11_LinearRegression.md)
 - Principal Component Analysis (PCA)
 - Gradient Descent
     - Stochastic Gradient Descent

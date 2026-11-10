@@ -1,4 +1,16 @@
-# 16 Machine Learning
+<head>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+# Machine Learning
 __Math 3280 - Data Mining__ : Snow College : Dr. Michael E. Olson
 
 ### Additional Resources

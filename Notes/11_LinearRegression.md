@@ -149,7 +149,7 @@ where $A^\dagger$ is known as the __Moore-Penrose__ (left) __Pseudo Inverse__. W
 
 $$x\approx \tilde{x} = A^\dagger b$$
 
-In the underdetermined case, there are an infinite number of solutions. Which one is right? We generally say that the *minimum-norm solution* is the one where $\min{||\tilde{x}||_2}$ such that $A\tilde{x}=b$.
+In the underdetermined case, there are an infinite number of solutions. Which one is right? We generally say that the *minimum-norm solution* is the one where $\min{\lvert\lvert\tilde{x}\lvert\lvert_2}$ such that $A\tilde{x}=b$.
 
 In the overdetermined solution, we can find the $\tilde{x}$ that minimizes the error:
 

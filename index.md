@@ -35,7 +35,8 @@ On this site, I have a number of resources, notes, and helps for you through the
 ### Machine Learning Models
 - [Overview of Machine Learning Models](./Notes/10_MachineLearning.md)
 - [Multi-linear Regression](./Notes/11_LinearRegression.md)
-- Principal Component Analysis (PCA)
+- [Principal Component Analysis (PCA)](./Notes/12_PCA.md)
+    - [Project: PCA Regression](./Projects/Project_PCA/)
 - Gradient Descent
     - Stochastic Gradient Descent
 - Logistic Regression

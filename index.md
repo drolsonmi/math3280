@@ -26,7 +26,9 @@ On this site, I have a number of resources, notes, and helps for you through the
 ### Big Data Comparisons
 - [Similarities](./Notes/05_Similarities.md)
     - Locality Sensitive Hashing
+    - [Project: Similarity](https://github.com/drolsonmi/math3280/tree/master/Projects/Project_Similarity)
 - [Itemsets](./Notes/06_Itemsets.md)
+    - [Project: Itemsets](https://github.com/drolsonmi/math3280/tree/master/Projects/Project_Itemsets)
 - [Recommendation Systems](./Notes/07_RecommendationSystems.md)
 - [PageRank](./Notes/08_PageRank.md)
 - [Singular Value Decomposition](./Notes/09_SVDs.md)
@@ -36,7 +38,7 @@ On this site, I have a number of resources, notes, and helps for you through the
 - [Overview of Machine Learning Models](./Notes/10_MachineLearning.md)
 - [Multi-linear Regression](./Notes/11_LinearRegression.md)
 - [Principal Component Analysis (PCA)](./Notes/12_PCA.md)
-    - [Project: PCA Regression](./Projects/Project_PCA/)
+    - [Project: PCA Regression](https://github.com/drolsonmi/math3280/tree/master/Projects/Project_PCA)
 - Gradient Descent
     - Stochastic Gradient Descent
 - Logistic Regression

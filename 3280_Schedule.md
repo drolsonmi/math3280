@@ -55,4 +55,4 @@ Important Dates to note:
 | Nov 3     | Last day to drop a class with a W         |
 | Nov 25-27 | Thanksgiving Break                        |
 | Dec 11    | Last day of classes                       |
-| Dec 16    | __FINAL EXAM__ at 7:00am in our classroom |
+| Wed, Dec 16 | __FINAL EXAM__ at 7:00am in our classroom |

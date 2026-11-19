@@ -39,6 +39,8 @@ On this site, I have a number of resources, notes, and helps for you through the
 - [Multi-linear Regression](./Notes/11_LinearRegression.md)
 - [Principal Component Analysis (PCA)](./Notes/12_PCA.md)
     - [Project: PCA Regression](https://github.com/drolsonmi/math3280/tree/master/Projects/Project_PCA)
-- Gradient Descent
+- [Fitting](./Notes/13_Fitting.md)
+    - Error measures
+    - Gradient Descent
     - Stochastic Gradient Descent
 - Logistic Regression

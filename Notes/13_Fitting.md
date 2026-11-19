@@ -1,4 +1,16 @@
-# 17 Fitting
+<head>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+# Fitting
 __Math 3280 - Data Mining__ : Snow College : Dr. Michael E. Olson
 
 Reading
@@ -62,9 +74,13 @@ __Root Mean Square Log Error (RMSLE)__
 $$RMSLE = \sqrt{\frac{1}{n}\sum \left[\ln(y'+1) - \ln(y+1)\right]^2}$$
 
 #### How do we know if the error is good?
-STILL NEED TO WRITE THIS SECTION.
-* Compare to mean (RMSE / mean)
-* Normalize
+No real set way to tell. Basically, we need to compare these measures to other baselines to determine if it is good or not. Here are some tips:
+* Error measure for Test data should be similar to the error for Training data
+* Compare the error measure to some baseline
+    * Compare to mean (RMSE / mean) to get a % error
+    * Compare RMSE to MAE. Since RMSE squares the errors, any outliers will be penalized heavily. If RMSE > MAE, large outliers/errors are present.
+* Check the units
+    * What would be a reasonable error for the units we are working with?
 
 ### Evaluating Classification models
 The key to evaluating classification models is to count the number of correct classifications. To understand these calculations, we look at the confusion matrix. Here is an example of a confusion matrix when predicting 3 categories:
@@ -128,7 +144,7 @@ If we increase the complexity of our model (for example, do a polynomial/nonline
 
 At some point, however, new data will stop benefiting from the model improvements, and those errors start to rise. Why? Extremely complex models tend to be tailored to the testing data to the point that any data outside the testing dataset is automatically considered to be an outlier.
 
-> Code/17_Fitting_Overfitting.ipynb
+> Code/13_Fitting_Overfitting.ipynb
 
 ## Loss Functions
 When we want to optimize models, we look at a loss function (the evaulation methods above). Let's use linear and multi-linear regression as an example.
@@ -172,8 +188,8 @@ Our goal is to minimize our loss function. The problem is that the loss function
 
 To avoid overshooting, don't update the parameters all the way.
 1. Determine how the loss function will change with respect to each parameter $\tfrac{\partial E}{\partial \theta_k}$
-2. Determine whether increase or decreasing $\theta_k$ will cause E to drop
-3. Take a *small* step in the direction step 2 indicates
+2. Determine whether increasing or decreasing $\theta_k$ will cause E to drop
+3. Take a *small* step in the *downhill* direction step 2 indicates $\left( -\eta \tfrac{\partial E}{\partial \theta_k}\right)$
 4. Repeat steps 1-3 until $\tfrac{\partial E}{\partial \theta_k} = 0$
 
 To best see how this works in multiple dimensions, consider your loss function like a mountain.

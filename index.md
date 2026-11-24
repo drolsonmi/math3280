@@ -43,4 +43,5 @@ On this site, I have a number of resources, notes, and helps for you through the
     - Error measures
     - Gradient Descent
     - Stochastic Gradient Descent
-- Logistic Regression
+- [Logistic Regression](./Notes/14_LogisticRegression.md)
+    - [3080 Logistic Regression Notes](./Notes/14_LogisticRegression_from3080.md)

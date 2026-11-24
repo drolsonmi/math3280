@@ -248,3 +248,13 @@ What if you hit a local minimum, but there is another global minimum?
         * Introduces noise
         * Path becomes more erratic - slows it down, but not as much as using the full dataset
     * The erratic nature of SGD makes it possible to get out of a local minimum but not likely to get out of a global minimum
+
+### How far should we go before we stop training?
+Goal is to continue until $\frac{\partial L}{\partial \theta_k} \approx 0$ for all $\theta_k$
+- One method
+    - Set a threshold (like 0.05) and go until ∂L/(∂θ_k )<threshold for each θ_k
+- Another method
+    - Calculate MSE (or MAE) of the partial derivatives for each iteration of SGD
+        - $\frac{1}{n}\sum_k \left(\frac{\partial L}{\partial \theta_k}\right)^2$ 
+        - $\frac{1}{n}\sum_k \lvert \frac{\partial L}{\partial \theta_k}\lvert$ 
+    - Find parameters that minimize the MSE
